@@ -1,0 +1,45 @@
+[2024-12-07 05:49:56.732] Total de monitores: 2
+[2024-12-07 05:49:56.752] Monitor 1 (\\.\DISPLAY1):
+[2024-12-07 05:49:56.753]   Bounds: {X=-1080,Y=-383,Width=1080,Height=1920} (Absoluto)
+[2024-12-07 05:49:56.754]   Working Area: {X=-1080,Y=-383,Width=1080,Height=1920}
+[2024-12-07 05:49:56.754]   Primary: False
+[2024-12-07 05:49:56.755]   BitsPerPixel: 32
+[2024-12-07 05:49:56.755] Monitor 2 (\\.\DISPLAY2):
+[2024-12-07 05:49:56.756]   Bounds: {X=0,Y=0,Width=1920,Height=1080} (Absoluto)
+[2024-12-07 05:49:56.756]   Working Area: {X=0,Y=34,Width=1920,Height=1046}
+[2024-12-07 05:49:56.757]   Primary: True
+[2024-12-07 05:49:56.758]   BitsPerPixel: 32
+[2024-12-07 05:49:56.759] === Detalhes dos Screens ===
+[2024-12-07 05:49:56.759] Screen: \\.\DISPLAY1 Config: \\.\DISPLAY2
+[2024-12-07 05:49:56.761] Screen: \\.\DISPLAY2 Config: \\.\DISPLAY2
+[2024-12-07 05:49:56.763] ===========================
+[2024-12-07 05:49:56.764] Usando monitor: \\.\DISPLAY2
+[2024-12-07 05:49:56.766] Tentando posicionar em - X:70, Y:-5
+[2024-12-07 05:49:56.770] Ignorando salvamento durante inicialização
+[2024-12-07 05:49:56.788] Ignorando salvamento durante inicialização
+[2024-12-07 05:49:56.806] Posição final: X=70, Y=-5 em \\.\DISPLAY2
+[2024-12-07 05:49:58.752] Estado interno - IsActive: False, Title: .gitignore - MyTaskBar - Cursor
+[2024-12-07 05:49:58.767] WinEventProc - Evento de mudança de foco para: .gitignore - MyTaskBar - Cursor
+[2024-12-07 05:49:58.770] UpdateActiveWindow - Nova janela ativa: .gitignore - MyTaskBar - Cursor
+[2024-12-07 05:49:58.772] Desativando janela: .gitignore - MyTaskBar - Cursor
+[2024-12-07 05:49:58.780] Ativando janela: .gitignore - MyTaskBar - Cursor
+[2024-12-07 05:49:59.718] Estado interno - IsActive: False, Title: Spotify
+[2024-12-07 05:49:59.728] WinEventProc - Evento de mudança de foco para: Spotify
+[2024-12-07 05:49:59.730] UpdateActiveWindow - Nova janela ativa: Spotify
+[2024-12-07 05:49:59.731] Desativando janela: Spotify
+[2024-12-07 05:49:59.736] Ativando janela: Spotify
+[2024-12-07 05:50:00.518] Estado interno - IsActive: True, Title: Spotify
+[2024-12-07 05:50:00.520] Minimizando janela ativa
+[2024-12-07 05:50:00.549] WinEventProc - Evento de mudança de foco para: .gitignore - MyTaskBar - Cursor
+[2024-12-07 05:50:00.553] UpdateActiveWindow - Nova janela ativa: .gitignore - MyTaskBar - Cursor
+[2024-12-07 05:50:00.555] Ativando janela: .gitignore - MyTaskBar - Cursor
+[2024-12-07 05:50:02.150] Estado interno - IsActive: True, Title: .gitignore - MyTaskBar - Cursor
+[2024-12-07 05:50:02.152] Minimizando janela ativa
+[2024-12-07 05:50:02.169] WinEventProc - Evento de mudança de foco para: publish – Explorador de Arquivos
+[2024-12-07 05:50:02.171] UpdateActiveWindow - Nova janela ativa: publish – Explorador de Arquivos
+[2024-12-07 05:50:02.173] Ativando janela: publish – Explorador de Arquivos
+[2024-12-07 05:50:03.775] Estado interno - IsActive: False, Title: .gitignore - MyTaskBar - Cursor
+[2024-12-07 05:50:03.801] WinEventProc - Evento de mudança de foco para: .gitignore - MyTaskBar - Cursor
+[2024-12-07 05:50:03.807] UpdateActiveWindow - Nova janela ativa: .gitignore - MyTaskBar - Cursor
+[2024-12-07 05:50:03.809] Desativando janela: .gitignore - MyTaskBar - Cursor
+[2024-12-07 05:50:03.814] Ativando janela: .gitignore - MyTaskBar - Cursor
