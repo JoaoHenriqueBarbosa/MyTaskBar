@@ -1,5 +1,7 @@
 namespace MyTaskBar;
 
+using System.Diagnostics;
+using System.Windows.Forms;
 using Newtonsoft.Json;
 
 public class WindowPosition
@@ -55,15 +57,49 @@ public class WindowPosition
 
 public class AppConfig
 {
-    public List<string> IgnoredApps { get; set; } = new();
-    public WindowPosition WindowPosition { get; set; } = new WindowPosition 
-    { 
-        X = 100, 
-        Y = 100, 
+    public HashSet<string> IgnoredApps { get; set; } = [];
+    public bool ShowInTaskbar { get; set; } = true;
+    public bool StartWithWindows { get; set; } = false;
+    public WindowPosition WindowPosition { get; set; } = new()
+    {
+        X = 100,
+        Y = 100,
         MonitorDevice = Screen.PrimaryScreen?.DeviceName ?? ""
     };
 
     private const string ConfigPath = "config.json";
+
+    public void IgnoreApp(string appTitle)
+    {
+        if (!IgnoredApps.Contains(appTitle))
+        {
+            IgnoredApps.Add(appTitle);
+            Save();
+        }
+    }
+
+    public void RestoreApp(string appTitle)
+    {
+        if (IgnoredApps.Contains(appTitle))
+        {
+            IgnoredApps.Remove(appTitle);
+            Save();
+        }
+    }
+
+    public void Save()
+    {
+        try
+        {
+            string json = JsonConvert.SerializeObject(this, Formatting.Indented);
+            File.WriteAllText(ConfigPath, json);
+            Debug.WriteLine($"Configuração salva com monitor: {WindowPosition.MonitorDevice}");
+        }
+        catch (Exception ex)
+        {
+            Debug.WriteLine($"Error saving config: {ex.Message}");
+        }
+    }
 
     public static AppConfig Load()
     {
@@ -106,19 +142,5 @@ public class AppConfig
             Debug.WriteLine($"Error loading config: {ex.Message}");
         }
         return new AppConfig();
-    }
-
-    public void Save()
-    {
-        try
-        {
-            string json = JsonConvert.SerializeObject(this, Formatting.Indented);
-            File.WriteAllText(ConfigPath, json);
-            Debug.WriteLine($"Configuração salva com monitor: {WindowPosition.MonitorDevice}");
-        }
-        catch (Exception ex)
-        {
-            Debug.WriteLine($"Error saving config: {ex.Message}");
-        }
     }
 } 

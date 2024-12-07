@@ -1,5 +1,10 @@
 {
-  "IgnoredApps": [],
+  "IgnoredApps": [
+    "Host de Experiência do Windows Shell",
+    "Configurações"
+  ],
+  "ShowInTaskbar": true,
+  "StartWithWindows": false,
   "WindowPosition": {
     "MonitorDevice": "\\\\.\\DISPLAY2",
     "X": 70,

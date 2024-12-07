@@ -110,6 +110,7 @@ public class TaskButton : Button
         this.MouseEnter += TaskButton_MouseEnter;
         this.MouseLeave += TaskButton_MouseLeave;
         this.Disposed += TaskButton_Disposed;
+        this.MouseDown += TaskButton_MouseDown;
 
         // Carregar ícone com opacidade padrão
         LoadIcon(DefaultOpacity);
@@ -123,6 +124,9 @@ public class TaskButton : Button
 
     // Evento para notificar quando um app deve ser restaurado
     public event EventHandler<string>? RestoreAppRequested;
+
+    // Evento para notificar quando o usuário quer matar o processo
+    public event EventHandler? KillProcessRequested;
 
     private void OnButtonClick()
     {
@@ -153,6 +157,10 @@ public class TaskButton : Button
                 Application.Exit();
             }
             lastRightClick = now;
+        }
+        if (e.Button == MouseButtons.Middle)
+        {
+            KillProcessRequested?.Invoke(this, EventArgs.Empty);
         }
     }
 

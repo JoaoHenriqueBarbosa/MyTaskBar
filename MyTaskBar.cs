@@ -434,35 +434,21 @@ public partial class MainWindow : Form
 
         btn.IgnoreAppRequested += (s, appTitle) =>
         {
-            if (!config.IgnoredApps.Contains(appTitle))
-            {
-                config.IgnoredApps.Add(appTitle);
-                config.Save();
-
-                if (windowStates.TryGetValue(handle, out var state))
-                {
-                    layout.Controls.Remove(state.Button);
-                    state.Button.Dispose();
-                    windowStates.Remove(handle);
-                    this.PerformLayout();
-                }
-            }
+            config.IgnoreApp(appTitle);
+            ProcessWindowRemoval(handle);
         };
 
         btn.RestoreAppRequested += (s, appTitle) =>
         {
-            if (config.IgnoredApps.Contains(appTitle))
-            {
-                config.IgnoredApps.Remove(appTitle);
-                config.Save();
-                UpdateWindowsList(); // Atualiza a lista para mostrar o app restaurado
-            }
+            config.RestoreApp(appTitle);
+            UpdateWindowsList(); // Atualiza a lista para mostrar o app restaurado
         };
 
         btn.GetIgnoredApps = (s, e) => config.IgnoredApps;
 
         btn.MinimizeRequested += (s, e) => MinimizeWindow(handle);
         btn.ActivateRequested += (s, e) => ActivateWindow(handle);
+        btn.KillProcessRequested += (s, e) => KillProcess(handle);
 
         return btn;
     }
@@ -517,6 +503,25 @@ public partial class MainWindow : Form
         catch (Exception ex)
         {
             Debug.WriteLine($"Erro ao ativar janela: {ex.Message}");
+        }
+    }
+
+    private void KillProcess(IntPtr hwnd)
+    {
+        try
+        {
+            GetWindowThreadProcessId(hwnd, out int processId);
+            using var process = Process.GetProcessById(processId);
+            
+            if (!process.HasExited)
+            {
+                process.Kill();
+                ProcessWindowRemoval(hwnd);
+            }
+        }
+        catch (Exception ex)
+        {
+            Debug.WriteLine($"Erro ao matar processo: {ex.Message}");
         }
     }
 
