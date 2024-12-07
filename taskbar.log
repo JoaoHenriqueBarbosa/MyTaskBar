@@ -43,3 +43,1335 @@
 [2024-12-07 05:50:03.807] UpdateActiveWindow - Nova janela ativa: .gitignore - MyTaskBar - Cursor
 [2024-12-07 05:50:03.809] Desativando janela: .gitignore - MyTaskBar - Cursor
 [2024-12-07 05:50:03.814] Ativando janela: .gitignore - MyTaskBar - Cursor
+[2024-12-07 09:30:28.393] Total de monitores: 2
+[2024-12-07 09:30:28.412] Monitor 1 (\\.\DISPLAY1):
+[2024-12-07 09:30:28.413]   Bounds: {X=-1080,Y=-383,Width=1080,Height=1920} (Absoluto)
+[2024-12-07 09:30:28.414]   Working Area: {X=-1080,Y=-383,Width=1080,Height=1920}
+[2024-12-07 09:30:28.414]   Primary: False
+[2024-12-07 09:30:28.414]   BitsPerPixel: 32
+[2024-12-07 09:30:28.414] Monitor 2 (\\.\DISPLAY2):
+[2024-12-07 09:30:28.415]   Bounds: {X=0,Y=0,Width=1920,Height=1080} (Absoluto)
+[2024-12-07 09:30:28.415]   Working Area: {X=0,Y=34,Width=1920,Height=1046}
+[2024-12-07 09:30:28.415]   Primary: True
+[2024-12-07 09:30:28.415]   BitsPerPixel: 32
+[2024-12-07 09:30:28.416] === Detalhes dos Screens ===
+[2024-12-07 09:30:28.416] Screen: \\.\DISPLAY1 Config: \\.\DISPLAY2
+[2024-12-07 09:30:28.417] Screen: \\.\DISPLAY2 Config: \\.\DISPLAY2
+[2024-12-07 09:30:28.417] ===========================
+[2024-12-07 09:30:28.417] Usando monitor: \\.\DISPLAY2
+[2024-12-07 09:30:28.418] Tentando posicionar em - X:70, Y:-5
+[2024-12-07 09:30:28.421] Ignorando salvamento durante inicialização
+[2024-12-07 09:30:28.435] Ignorando salvamento durante inicialização
+[2024-12-07 09:30:28.450] Posição final: X=70, Y=-5 em \\.\DISPLAY2
+[2024-12-07 09:30:33.843] Estado interno - IsActive: False, Title: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:30:33.854] WinEventProc - Evento de mudança de foco para: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:30:33.857] UpdateActiveWindow - Nova janela ativa: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:30:33.858] Desativando janela: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:30:33.863] Ativando janela: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:30:36.266] Estado interno - IsActive: True, Title: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:30:36.266] Minimizando janela ativa
+[2024-12-07 09:30:36.282] WinEventProc - Evento de mudança de foco para: PowerShell
+[2024-12-07 09:30:36.282] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 09:30:36.283] Ativando janela: PowerShell
+[2024-12-07 09:30:37.601] Estado interno - IsActive: False, Title: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:30:37.624] WinEventProc - Evento de mudança de foco para: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:30:37.625] UpdateActiveWindow - Nova janela ativa: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:30:37.625] Desativando janela: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:30:37.689] Ativando janela: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:30:46.769] Estado interno - IsActive: False, Title: PowerShell
+[2024-12-07 09:30:46.776] WinEventProc - Evento de mudança de foco para: PowerShell
+[2024-12-07 09:30:46.777] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 09:30:46.777] Desativando janela: PowerShell
+[2024-12-07 09:30:46.780] Ativando janela: PowerShell
+[2024-12-07 09:30:47.570] Estado interno - IsActive: False, Title: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:30:47.580] WinEventProc - Evento de mudança de foco para: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:30:47.583] UpdateActiveWindow - Nova janela ativa: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:30:47.584] Desativando janela: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:30:47.587] Ativando janela: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:30:48.697] Estado interno - IsActive: False, Title: PowerShell
+[2024-12-07 09:30:48.704] WinEventProc - Evento de mudança de foco para: PowerShell
+[2024-12-07 09:30:48.705] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 09:30:48.705] Desativando janela: PowerShell
+[2024-12-07 09:30:48.707] Ativando janela: PowerShell
+[2024-12-07 09:30:50.074] Estado interno - IsActive: False, Title: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:30:50.083] WinEventProc - Evento de mudança de foco para: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:30:50.086] UpdateActiveWindow - Nova janela ativa: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:30:50.086] Desativando janela: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:30:50.090] Ativando janela: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:30:55.329] Estado interno - IsActive: False, Title: PowerShell
+[2024-12-07 09:30:55.337] WinEventProc - Evento de mudança de foco para: PowerShell
+[2024-12-07 09:30:55.337] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 09:30:55.338] Desativando janela: PowerShell
+[2024-12-07 09:30:55.340] Ativando janela: PowerShell
+[2024-12-07 09:30:57.234] Estado interno - IsActive: False, Title: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:30:57.244] WinEventProc - Evento de mudança de foco para: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:30:57.246] UpdateActiveWindow - Nova janela ativa: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:30:57.246] Desativando janela: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:30:57.250] Ativando janela: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:30:59.956] WinEventProc - Evento de mudança de foco para: Alternância de Tarefas
+[2024-12-07 09:30:59.957] UpdateActiveWindow - Nova janela ativa: Alternância de Tarefas
+[2024-12-07 09:30:59.958] Desativando janela: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:31:00.652] WinEventProc - Evento de mudança de foco para: PowerShell
+[2024-12-07 09:31:00.654] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 09:31:00.654] Ativando janela: PowerShell
+[2024-12-07 09:31:00.658] WinEventProc - Evento de mudança de foco para: Alternância de Tarefas
+[2024-12-07 09:31:00.658] UpdateActiveWindow - Nova janela ativa: Alternância de Tarefas
+[2024-12-07 09:31:00.658] Desativando janela: PowerShell
+[2024-12-07 09:31:10.027] Total de monitores: 2
+[2024-12-07 09:31:10.048] Monitor 1 (\\.\DISPLAY1):
+[2024-12-07 09:31:10.049]   Bounds: {X=-1080,Y=-383,Width=1080,Height=1920} (Absoluto)
+[2024-12-07 09:31:10.050]   Working Area: {X=-1080,Y=-383,Width=1080,Height=1920}
+[2024-12-07 09:31:10.050]   Primary: False
+[2024-12-07 09:31:10.051]   BitsPerPixel: 32
+[2024-12-07 09:31:10.051] Monitor 2 (\\.\DISPLAY2):
+[2024-12-07 09:31:10.051]   Bounds: {X=0,Y=0,Width=1920,Height=1080} (Absoluto)
+[2024-12-07 09:31:10.051]   Working Area: {X=0,Y=34,Width=1920,Height=1046}
+[2024-12-07 09:31:10.051]   Primary: True
+[2024-12-07 09:31:10.052]   BitsPerPixel: 32
+[2024-12-07 09:31:10.052] === Detalhes dos Screens ===
+[2024-12-07 09:31:10.053] Screen: \\.\DISPLAY1 Config: \\.\DISPLAY2
+[2024-12-07 09:31:10.053] Screen: \\.\DISPLAY2 Config: \\.\DISPLAY2
+[2024-12-07 09:31:10.053] ===========================
+[2024-12-07 09:31:10.054] Usando monitor: \\.\DISPLAY2
+[2024-12-07 09:31:10.054] Tentando posicionar em - X:70, Y:-5
+[2024-12-07 09:31:10.057] Ignorando salvamento durante inicialização
+[2024-12-07 09:31:10.083] Ignorando salvamento durante inicialização
+[2024-12-07 09:31:10.084] Posição final: X=70, Y=-5 em \\.\DISPLAY2
+[2024-12-07 09:31:19.827] Estado interno - IsActive: False, Title: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:31:19.838] WinEventProc - Evento de mudança de foco para: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:31:19.841] UpdateActiveWindow - Nova janela ativa: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:31:19.841] Desativando janela: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:31:19.845] Ativando janela: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:31:21.018] Estado interno - IsActive: False, Title: PowerShell
+[2024-12-07 09:31:21.028] WinEventProc - Evento de mudança de foco para: PowerShell
+[2024-12-07 09:31:21.029] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 09:31:21.030] Desativando janela: PowerShell
+[2024-12-07 09:31:21.032] Ativando janela: PowerShell
+[2024-12-07 09:31:23.202] Estado interno - IsActive: False, Title: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:31:23.214] WinEventProc - Evento de mudança de foco para: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:31:23.216] UpdateActiveWindow - Nova janela ativa: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:31:23.216] Desativando janela: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:31:23.220] Ativando janela: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:31:23.801] Estado interno - IsActive: False, Title: PowerShell
+[2024-12-07 09:31:23.809] WinEventProc - Evento de mudança de foco para: PowerShell
+[2024-12-07 09:31:23.810] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 09:31:23.810] Desativando janela: PowerShell
+[2024-12-07 09:31:23.812] Ativando janela: PowerShell
+[2024-12-07 09:31:24.681] WinEventProc - Evento de mudança de foco para: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:31:24.682] UpdateActiveWindow - Nova janela ativa: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:31:24.683] Desativando janela: PowerShell
+[2024-12-07 09:31:24.688] Ativando janela: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:31:26.093] WinEventProc - Evento de mudança de foco para: PowerShell
+[2024-12-07 09:31:26.094] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 09:31:26.095] Desativando janela: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:31:26.097] Ativando janela: PowerShell
+[2024-12-07 09:32:05.243] Total de monitores: 2
+[2024-12-07 09:32:05.262] Monitor 1 (\\.\DISPLAY1):
+[2024-12-07 09:32:05.263]   Bounds: {X=-1080,Y=-383,Width=1080,Height=1920} (Absoluto)
+[2024-12-07 09:32:05.264]   Working Area: {X=-1080,Y=-383,Width=1080,Height=1920}
+[2024-12-07 09:32:05.264]   Primary: False
+[2024-12-07 09:32:05.264]   BitsPerPixel: 32
+[2024-12-07 09:32:05.264] Monitor 2 (\\.\DISPLAY2):
+[2024-12-07 09:32:05.264]   Bounds: {X=0,Y=0,Width=1920,Height=1080} (Absoluto)
+[2024-12-07 09:32:05.265]   Working Area: {X=0,Y=34,Width=1920,Height=1046}
+[2024-12-07 09:32:05.265]   Primary: True
+[2024-12-07 09:32:05.265]   BitsPerPixel: 32
+[2024-12-07 09:32:05.266] === Detalhes dos Screens ===
+[2024-12-07 09:32:05.266] Screen: \\.\DISPLAY1 Config: \\.\DISPLAY2
+[2024-12-07 09:32:05.266] Screen: \\.\DISPLAY2 Config: \\.\DISPLAY2
+[2024-12-07 09:32:05.267] ===========================
+[2024-12-07 09:32:05.267] Usando monitor: \\.\DISPLAY2
+[2024-12-07 09:32:05.267] Tentando posicionar em - X:70, Y:-5
+[2024-12-07 09:32:05.270] Ignorando salvamento durante inicialização
+[2024-12-07 09:32:05.286] Ignorando salvamento durante inicialização
+[2024-12-07 09:32:05.302] Posição final: X=70, Y=-5 em \\.\DISPLAY2
+[2024-12-07 09:32:05.878] WinEventProc - Evento de mudança de foco para: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:32:05.879] UpdateActiveWindow - Nova janela ativa: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:32:05.880] Ativando janela: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:32:08.482] Estado interno - IsActive: False, Title: PowerShell
+[2024-12-07 09:32:08.490] WinEventProc - Evento de mudança de foco para: PowerShell
+[2024-12-07 09:32:08.491] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 09:32:08.491] Desativando janela: PowerShell
+[2024-12-07 09:32:08.494] Ativando janela: PowerShell
+[2024-12-07 09:32:15.996] WinEventProc - Evento de mudança de foco para: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 09:32:15.998] UpdateActiveWindow - Nova janela ativa: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 09:32:15.998] Desativando janela: PowerShell
+[2024-12-07 09:32:16.005] Ativando janela: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:32:20.426] WinEventProc - Evento de mudança de foco para: PowerShell
+[2024-12-07 09:32:20.428] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 09:32:20.428] Desativando janela: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:32:20.431] Ativando janela: PowerShell
+[2024-12-07 09:32:33.673] Total de monitores: 2
+[2024-12-07 09:32:33.691] Monitor 1 (\\.\DISPLAY1):
+[2024-12-07 09:32:33.692]   Bounds: {X=-1080,Y=-383,Width=1080,Height=1920} (Absoluto)
+[2024-12-07 09:32:33.693]   Working Area: {X=-1080,Y=-383,Width=1080,Height=1920}
+[2024-12-07 09:32:33.693]   Primary: False
+[2024-12-07 09:32:33.693]   BitsPerPixel: 32
+[2024-12-07 09:32:33.693] Monitor 2 (\\.\DISPLAY2):
+[2024-12-07 09:32:33.694]   Bounds: {X=0,Y=0,Width=1920,Height=1080} (Absoluto)
+[2024-12-07 09:32:33.694]   Working Area: {X=0,Y=34,Width=1920,Height=1046}
+[2024-12-07 09:32:33.694]   Primary: True
+[2024-12-07 09:32:33.694]   BitsPerPixel: 32
+[2024-12-07 09:32:33.695] === Detalhes dos Screens ===
+[2024-12-07 09:32:33.696] Screen: \\.\DISPLAY1 Config: \\.\DISPLAY2
+[2024-12-07 09:32:33.696] Screen: \\.\DISPLAY2 Config: \\.\DISPLAY2
+[2024-12-07 09:32:33.696] ===========================
+[2024-12-07 09:32:33.697] Usando monitor: \\.\DISPLAY2
+[2024-12-07 09:32:33.697] Tentando posicionar em - X:70, Y:-5
+[2024-12-07 09:32:33.700] Ignorando salvamento durante inicialização
+[2024-12-07 09:32:33.716] Ignorando salvamento durante inicialização
+[2024-12-07 09:32:33.731] Posição final: X=70, Y=-5 em \\.\DISPLAY2
+[2024-12-07 09:32:35.931] Estado interno - IsActive: False, Title: PowerShell
+[2024-12-07 09:32:35.941] WinEventProc - Evento de mudança de foco para: PowerShell
+[2024-12-07 09:32:35.942] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 09:32:35.943] Desativando janela: PowerShell
+[2024-12-07 09:32:35.946] Ativando janela: PowerShell
+[2024-12-07 09:32:37.336] WinEventProc - Evento de mudança de foco para: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:32:37.338] UpdateActiveWindow - Nova janela ativa: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:32:37.339] Desativando janela: PowerShell
+[2024-12-07 09:32:37.346] Ativando janela: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:32:39.137] Estado interno - IsActive: False, Title: PowerShell
+[2024-12-07 09:32:39.148] WinEventProc - Evento de mudança de foco para: PowerShell
+[2024-12-07 09:32:39.149] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 09:32:39.149] Desativando janela: PowerShell
+[2024-12-07 09:32:39.151] Ativando janela: PowerShell
+[2024-12-07 09:32:44.153] Estado interno - IsActive: False, Title: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:32:44.163] WinEventProc - Evento de mudança de foco para: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:32:44.164] UpdateActiveWindow - Nova janela ativa: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:32:44.164] Desativando janela: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:32:44.169] Ativando janela: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:32:50.850] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\DropdownBar\DropdownBar.ini
+[2024-12-07 09:32:50.851] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\DropdownBar\DropdownBar.ini
+[2024-12-07 09:32:50.852] Desativando janela: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:32:51.212] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu1\SettingsMenu1.ini
+[2024-12-07 09:32:51.212] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu1\SettingsMenu1.ini
+[2024-12-07 09:32:51.213] Nenhuma mudança de estado detectada
+[2024-12-07 09:32:53.251] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu2\SettingsMenu2.ini
+[2024-12-07 09:32:53.251] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu2\SettingsMenu2.ini
+[2024-12-07 09:32:53.252] Nenhuma mudança de estado detectada
+[2024-12-07 09:32:54.460] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu1\SettingsMenu1.ini
+[2024-12-07 09:32:54.461] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu1\SettingsMenu1.ini
+[2024-12-07 09:32:54.461] Nenhuma mudança de estado detectada
+[2024-12-07 09:32:54.782] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu2\SettingsMenu2.ini
+[2024-12-07 09:32:54.783] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu2\SettingsMenu2.ini
+[2024-12-07 09:32:54.783] Nenhuma mudança de estado detectada
+[2024-12-07 09:32:55.288] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu1\SettingsMenu1.ini
+[2024-12-07 09:32:55.289] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu1\SettingsMenu1.ini
+[2024-12-07 09:32:55.290] Nenhuma mudança de estado detectada
+[2024-12-07 09:32:55.679] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu2\SettingsMenu2.ini
+[2024-12-07 09:32:55.680] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu2\SettingsMenu2.ini
+[2024-12-07 09:32:55.680] Nenhuma mudança de estado detectada
+[2024-12-07 09:32:56.710] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu1\SettingsMenu1.ini
+[2024-12-07 09:32:56.711] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu1\SettingsMenu1.ini
+[2024-12-07 09:32:56.712] Nenhuma mudança de estado detectada
+[2024-12-07 09:32:57.080] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu2\SettingsMenu2.ini
+[2024-12-07 09:32:57.081] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu2\SettingsMenu2.ini
+[2024-12-07 09:32:57.081] Nenhuma mudança de estado detectada
+[2024-12-07 09:32:57.397] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu1\SettingsMenu1.ini
+[2024-12-07 09:32:57.398] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu1\SettingsMenu1.ini
+[2024-12-07 09:32:57.399] Nenhuma mudança de estado detectada
+[2024-12-07 09:32:57.738] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu2\SettingsMenu2.ini
+[2024-12-07 09:32:57.739] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu2\SettingsMenu2.ini
+[2024-12-07 09:32:57.739] Nenhuma mudança de estado detectada
+[2024-12-07 09:32:58.476] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu1\SettingsMenu1.ini
+[2024-12-07 09:32:58.476] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu1\SettingsMenu1.ini
+[2024-12-07 09:32:58.477] Nenhuma mudança de estado detectada
+[2024-12-07 09:32:58.878] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu2\SettingsMenu2.ini
+[2024-12-07 09:32:58.879] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu2\SettingsMenu2.ini
+[2024-12-07 09:32:58.879] Nenhuma mudança de estado detectada
+[2024-12-07 09:33:00.644] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu1\SettingsMenu1.ini
+[2024-12-07 09:33:00.644] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu1\SettingsMenu1.ini
+[2024-12-07 09:33:00.645] Nenhuma mudança de estado detectada
+[2024-12-07 09:33:01.031] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu2\SettingsMenu2.ini
+[2024-12-07 09:33:01.031] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu2\SettingsMenu2.ini
+[2024-12-07 09:33:01.032] Nenhuma mudança de estado detectada
+[2024-12-07 09:33:03.101] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu1\SettingsMenu1.ini
+[2024-12-07 09:33:03.102] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu1\SettingsMenu1.ini
+[2024-12-07 09:33:03.102] Nenhuma mudança de estado detectada
+[2024-12-07 09:33:03.455] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu2\SettingsMenu2.ini
+[2024-12-07 09:33:03.455] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu2\SettingsMenu2.ini
+[2024-12-07 09:33:03.456] Nenhuma mudança de estado detectada
+[2024-12-07 09:33:03.800] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu1\SettingsMenu1.ini
+[2024-12-07 09:33:03.801] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu1\SettingsMenu1.ini
+[2024-12-07 09:33:03.801] Nenhuma mudança de estado detectada
+[2024-12-07 09:33:04.224] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu2\SettingsMenu2.ini
+[2024-12-07 09:33:04.224] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu2\SettingsMenu2.ini
+[2024-12-07 09:33:04.224] Nenhuma mudança de estado detectada
+[2024-12-07 09:33:04.544] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu1\SettingsMenu1.ini
+[2024-12-07 09:33:04.545] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu1\SettingsMenu1.ini
+[2024-12-07 09:33:04.545] Nenhuma mudança de estado detectada
+[2024-12-07 09:33:04.947] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu2\SettingsMenu2.ini
+[2024-12-07 09:33:04.948] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu2\SettingsMenu2.ini
+[2024-12-07 09:33:04.948] Nenhuma mudança de estado detectada
+[2024-12-07 09:33:06.538] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu1\SettingsMenu1.ini
+[2024-12-07 09:33:06.539] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu1\SettingsMenu1.ini
+[2024-12-07 09:33:06.539] Nenhuma mudança de estado detectada
+[2024-12-07 09:33:06.860] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu2\SettingsMenu2.ini
+[2024-12-07 09:33:06.861] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu2\SettingsMenu2.ini
+[2024-12-07 09:33:06.861] Nenhuma mudança de estado detectada
+[2024-12-07 09:33:09.866] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu1\SettingsMenu1.ini
+[2024-12-07 09:33:09.867] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu1\SettingsMenu1.ini
+[2024-12-07 09:33:09.867] Nenhuma mudança de estado detectada
+[2024-12-07 09:33:10.191] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu2\SettingsMenu2.ini
+[2024-12-07 09:33:10.192] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu2\SettingsMenu2.ini
+[2024-12-07 09:33:10.192] Nenhuma mudança de estado detectada
+[2024-12-07 09:33:12.072] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu1\SettingsMenu1.ini
+[2024-12-07 09:33:12.073] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu1\SettingsMenu1.ini
+[2024-12-07 09:33:12.074] Nenhuma mudança de estado detectada
+[2024-12-07 09:33:12.414] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu2\SettingsMenu2.ini
+[2024-12-07 09:33:12.415] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu2\SettingsMenu2.ini
+[2024-12-07 09:33:12.415] Nenhuma mudança de estado detectada
+[2024-12-07 09:33:15.279] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu1\SettingsMenu1.ini
+[2024-12-07 09:33:15.283] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu1\SettingsMenu1.ini
+[2024-12-07 09:33:15.284] Nenhuma mudança de estado detectada
+[2024-12-07 09:33:15.597] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu2\SettingsMenu2.ini
+[2024-12-07 09:33:15.598] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu2\SettingsMenu2.ini
+[2024-12-07 09:33:15.598] Nenhuma mudança de estado detectada
+[2024-12-07 09:33:15.909] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu1\SettingsMenu1.ini
+[2024-12-07 09:33:15.911] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu1\SettingsMenu1.ini
+[2024-12-07 09:33:15.911] Nenhuma mudança de estado detectada
+[2024-12-07 09:33:16.325] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu2\SettingsMenu2.ini
+[2024-12-07 09:33:16.326] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu2\SettingsMenu2.ini
+[2024-12-07 09:33:16.326] Nenhuma mudança de estado detectada
+[2024-12-07 09:33:16.640] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu1\SettingsMenu1.ini
+[2024-12-07 09:33:16.640] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu1\SettingsMenu1.ini
+[2024-12-07 09:33:16.641] Nenhuma mudança de estado detectada
+[2024-12-07 09:33:16.990] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu2\SettingsMenu2.ini
+[2024-12-07 09:33:16.990] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu2\SettingsMenu2.ini
+[2024-12-07 09:33:16.991] Nenhuma mudança de estado detectada
+[2024-12-07 09:33:25.284] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu1\SettingsMenu1.ini
+[2024-12-07 09:33:25.285] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu1\SettingsMenu1.ini
+[2024-12-07 09:33:25.286] Nenhuma mudança de estado detectada
+[2024-12-07 09:33:25.621] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu2\SettingsMenu2.ini
+[2024-12-07 09:33:25.622] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu2\SettingsMenu2.ini
+[2024-12-07 09:33:25.622] Nenhuma mudança de estado detectada
+[2024-12-07 09:33:30.005] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu1\SettingsMenu1.ini
+[2024-12-07 09:33:30.007] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu1\SettingsMenu1.ini
+[2024-12-07 09:33:30.009] Nenhuma mudança de estado detectada
+[2024-12-07 09:33:30.328] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu2\SettingsMenu2.ini
+[2024-12-07 09:33:30.329] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu2\SettingsMenu2.ini
+[2024-12-07 09:33:30.329] Nenhuma mudança de estado detectada
+[2024-12-07 09:33:30.680] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu1\SettingsMenu1.ini
+[2024-12-07 09:33:30.680] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu1\SettingsMenu1.ini
+[2024-12-07 09:33:30.680] Nenhuma mudança de estado detectada
+[2024-12-07 09:33:31.088] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu2\SettingsMenu2.ini
+[2024-12-07 09:33:31.088] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu2\SettingsMenu2.ini
+[2024-12-07 09:33:31.089] Nenhuma mudança de estado detectada
+[2024-12-07 09:33:33.019] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu1\SettingsMenu1.ini
+[2024-12-07 09:33:33.021] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu1\SettingsMenu1.ini
+[2024-12-07 09:33:33.022] Nenhuma mudança de estado detectada
+[2024-12-07 09:33:33.352] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu2\SettingsMenu2.ini
+[2024-12-07 09:33:33.352] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu2\SettingsMenu2.ini
+[2024-12-07 09:33:33.352] Nenhuma mudança de estado detectada
+[2024-12-07 09:33:33.687] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\DropdownBar\DropdownBar.ini
+[2024-12-07 09:33:33.688] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\DropdownBar\DropdownBar.ini
+[2024-12-07 09:33:33.688] Nenhuma mudança de estado detectada
+[2024-12-07 09:33:33.908] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder13\Folder13.ini
+[2024-12-07 09:33:33.908] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder13\Folder13.ini
+[2024-12-07 09:33:33.908] Nenhuma mudança de estado detectada
+[2024-12-07 09:33:34.064] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\DropdownBar\DropdownBar.ini
+[2024-12-07 09:33:34.065] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\DropdownBar\DropdownBar.ini
+[2024-12-07 09:33:34.065] Nenhuma mudança de estado detectada
+[2024-12-07 09:33:35.069] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder13\Folder13.ini
+[2024-12-07 09:33:35.070] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder13\Folder13.ini
+[2024-12-07 09:33:35.071] Nenhuma mudança de estado detectada
+[2024-12-07 09:33:35.350] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder01\Folder01.ini
+[2024-12-07 09:33:35.350] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder01\Folder01.ini
+[2024-12-07 09:33:35.351] Nenhuma mudança de estado detectada
+[2024-12-07 09:33:37.789] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder13\Folder13.ini
+[2024-12-07 09:33:37.790] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder13\Folder13.ini
+[2024-12-07 09:33:37.791] Nenhuma mudança de estado detectada
+[2024-12-07 09:33:37.961] WinEventProc - Evento de mudança de foco para: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:33:37.963] UpdateActiveWindow - Nova janela ativa: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:33:37.963] Nenhuma mudança de estado detectada
+[2024-12-07 09:33:46.579] Estado interno - IsActive: False, Title: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:33:46.587] WinEventProc - Evento de mudança de foco para: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:33:46.589] UpdateActiveWindow - Nova janela ativa: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:33:46.589] Desativando janela: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:33:46.592] Ativando janela: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:33:48.594] Estado interno - IsActive: False, Title: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:33:48.603] WinEventProc - Evento de mudança de foco para: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:33:48.605] UpdateActiveWindow - Nova janela ativa: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:33:48.605] Desativando janela: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:33:48.610] Ativando janela: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:33:50.105] Estado interno - IsActive: False, Title: PowerShell
+[2024-12-07 09:33:50.113] WinEventProc - Evento de mudança de foco para: PowerShell
+[2024-12-07 09:33:50.113] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 09:33:50.114] Desativando janela: PowerShell
+[2024-12-07 09:33:50.116] Ativando janela: PowerShell
+[2024-12-07 09:33:52.426] Estado interno - IsActive: False, Title: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:33:52.435] WinEventProc - Evento de mudança de foco para: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:33:52.437] UpdateActiveWindow - Nova janela ativa: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:33:52.437] Desativando janela: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:33:52.440] Ativando janela: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:33:55.270] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\DropdownBar\DropdownBar.ini
+[2024-12-07 09:33:55.271] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\DropdownBar\DropdownBar.ini
+[2024-12-07 09:33:55.271] Desativando janela: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:33:55.505] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder13\Folder13.ini
+[2024-12-07 09:33:55.506] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder13\Folder13.ini
+[2024-12-07 09:33:55.506] Nenhuma mudança de estado detectada
+[2024-12-07 09:33:56.700] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder01\Folder01.ini
+[2024-12-07 09:33:56.700] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder01\Folder01.ini
+[2024-12-07 09:33:56.701] Nenhuma mudança de estado detectada
+[2024-12-07 09:33:56.948] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder13\Folder13.ini
+[2024-12-07 09:33:56.949] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder13\Folder13.ini
+[2024-12-07 09:33:56.949] Nenhuma mudança de estado detectada
+[2024-12-07 09:33:57.019] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder01\Folder01.ini
+[2024-12-07 09:33:57.020] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder01\Folder01.ini
+[2024-12-07 09:33:57.020] Nenhuma mudança de estado detectada
+[2024-12-07 09:33:58.835] WinEventProc - Evento de mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder13\Folder13.ini
+[2024-12-07 09:33:58.836] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder13\Folder13.ini
+[2024-12-07 09:33:58.836] Nenhuma mudança de estado detectada
+[2024-12-07 09:33:59.028] WinEventProc - Evento de mudança de foco para: Everything
+[2024-12-07 09:33:59.029] UpdateActiveWindow - Nova janela ativa: Everything
+[2024-12-07 09:33:59.029] Nenhuma mudança de estado detectada
+[2024-12-07 09:34:01.551] WinEventProc - Evento de mudança de foco para: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:34:01.554] UpdateActiveWindow - Nova janela ativa: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:34:01.554] Ativando janela: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:34:07.422] WinEventProc - Evento de mudança de foco para: PowerShell
+[2024-12-07 09:34:07.422] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 09:34:07.423] Desativando janela: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:34:07.429] Ativando janela: PowerShell
+[2024-12-07 09:34:11.452] WinEventProc - Evento de mudança de foco para: Alternância de Tarefas
+[2024-12-07 09:34:11.453] UpdateActiveWindow - Nova janela ativa: Alternância de Tarefas
+[2024-12-07 09:34:11.454] Desativando janela: PowerShell
+[2024-12-07 09:34:12.927] WinEventProc - Evento de mudança de foco para: Alternância de Tarefas
+[2024-12-07 09:34:12.928] UpdateActiveWindow - Nova janela ativa: Alternância de Tarefas
+[2024-12-07 09:34:12.928] Nenhuma mudança de estado detectada
+[2024-12-07 09:34:16.194] WinEventProc - Evento de mudança de foco para: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:34:16.197] UpdateActiveWindow - Nova janela ativa: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:34:16.197] Desativando janela: Everything
+[2024-12-07 09:34:16.203] Ativando janela: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:34:20.723] Estado interno - IsActive: False, Title: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:34:20.734] WinEventProc - Evento de mudança de foco para: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:34:20.735] UpdateActiveWindow - Nova janela ativa: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:34:20.735] Desativando janela: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:34:20.741] Ativando janela: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:34:23.618] Estado interno - IsActive: False, Title: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:34:23.626] WinEventProc - Evento de mudança de foco para: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:34:23.629] UpdateActiveWindow - Nova janela ativa: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:34:23.629] Desativando janela: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:34:23.632] Ativando janela: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:34:24.937] Estado interno - IsActive: False, Title: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:34:24.947] WinEventProc - Evento de mudança de foco para: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:34:24.948] UpdateActiveWindow - Nova janela ativa: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:34:24.948] Desativando janela: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:34:24.954] Ativando janela: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:36:38.995] WinEventProc - Evento de mudança de foco para: PowerShell
+[2024-12-07 09:36:38.996] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 09:36:38.996] Desativando janela: PowerShell
+[2024-12-07 09:36:38.999] Ativando janela: PowerShell
+[2024-12-07 09:36:48.087] Total de monitores: 2
+[2024-12-07 09:36:48.105] Monitor 1 (\\.\DISPLAY1):
+[2024-12-07 09:36:48.107]   Bounds: {X=-1080,Y=-383,Width=1080,Height=1920} (Absoluto)
+[2024-12-07 09:36:48.107]   Working Area: {X=-1080,Y=-383,Width=1080,Height=1920}
+[2024-12-07 09:36:48.107]   Primary: False
+[2024-12-07 09:36:48.107]   BitsPerPixel: 32
+[2024-12-07 09:36:48.108] Monitor 2 (\\.\DISPLAY2):
+[2024-12-07 09:36:48.108]   Bounds: {X=0,Y=0,Width=1920,Height=1080} (Absoluto)
+[2024-12-07 09:36:48.108]   Working Area: {X=0,Y=34,Width=1920,Height=1046}
+[2024-12-07 09:36:48.109]   Primary: True
+[2024-12-07 09:36:48.109]   BitsPerPixel: 32
+[2024-12-07 09:36:48.110] === Detalhes dos Screens ===
+[2024-12-07 09:36:48.110] Screen: \\.\DISPLAY1 Config: \\.\DISPLAY2
+[2024-12-07 09:36:48.110] Screen: \\.\DISPLAY2 Config: \\.\DISPLAY2
+[2024-12-07 09:36:48.111] ===========================
+[2024-12-07 09:36:48.111] Usando monitor: \\.\DISPLAY2
+[2024-12-07 09:36:48.111] Tentando posicionar em - X:70, Y:-5
+[2024-12-07 09:36:48.114] Ignorando salvamento durante inicialização
+[2024-12-07 09:36:48.130] Ignorando salvamento durante inicialização
+[2024-12-07 09:36:48.144] Posição final: X=70, Y=-5 em \\.\DISPLAY2
+[2024-12-07 09:36:51.229] WinEventProc - Mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\DropdownBar\DropdownBar.ini
+[2024-12-07 09:36:51.230] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\DropdownBar\DropdownBar.ini
+[2024-12-07 09:36:51.230] Nenhuma mudança de estado detectada
+[2024-12-07 09:36:51.732] WinEventProc - Nova janela detectada: aprendizado-repos (Canal) - O Novo Mercado - Slack
+[2024-12-07 09:36:51.755] UpdateActiveWindow - Nova janela ativa: aprendizado-repos (Canal) - O Novo Mercado - Slack
+[2024-12-07 09:36:51.756] Ativando janela: aprendizado-repos (Canal) - O Novo Mercado - Slack
+[2024-12-07 09:36:51.760] WinEventProc - Mudança de foco para: aprendizado-repos (Canal) - O Novo Mercado - Slack
+[2024-12-07 09:36:51.762] UpdateActiveWindow - Nova janela ativa: aprendizado-repos (Canal) - O Novo Mercado - Slack
+[2024-12-07 09:36:51.762] Desativando janela: aprendizado-repos (Canal) - O Novo Mercado - Slack
+[2024-12-07 09:36:51.770] Ativando janela: aprendizado-repos (Canal) - O Novo Mercado - Slack
+[2024-12-07 09:36:51.776] WinEventProc - Nova janela detectada: Chrome Legacy Window
+[2024-12-07 09:36:51.777] UpdateActiveWindow - Nova janela ativa: Chrome Legacy Window
+[2024-12-07 09:36:51.778] Desativando janela: aprendizado-repos (Canal) - O Novo Mercado - Slack
+[2024-12-07 09:36:58.587] WinEventProc - Mudança de foco para: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:36:58.589] UpdateActiveWindow - Nova janela ativa: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:36:58.589] Ativando janela: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:37:02.003] WinEventProc - Mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\DropdownBar\DropdownBar.ini
+[2024-12-07 09:37:02.005] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\DropdownBar\DropdownBar.ini
+[2024-12-07 09:37:02.005] Desativando janela: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:37:02.251] WinEventProc - Mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder13\Folder13.ini
+[2024-12-07 09:37:02.251] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder13\Folder13.ini
+[2024-12-07 09:37:02.252] Nenhuma mudança de estado detectada
+[2024-12-07 09:37:02.737] WinEventProc - Mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder01\Folder01.ini
+[2024-12-07 09:37:02.738] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder01\Folder01.ini
+[2024-12-07 09:37:02.738] Nenhuma mudança de estado detectada
+[2024-12-07 09:37:03.674] WinEventProc - Mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder13\Folder13.ini
+[2024-12-07 09:37:03.674] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder13\Folder13.ini
+[2024-12-07 09:37:03.674] Nenhuma mudança de estado detectada
+[2024-12-07 09:37:03.749] WinEventProc - Mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder01\Folder01.ini
+[2024-12-07 09:37:03.749] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder01\Folder01.ini
+[2024-12-07 09:37:03.749] Nenhuma mudança de estado detectada
+[2024-12-07 09:37:06.117] WinEventProc - Mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder13\Folder13.ini
+[2024-12-07 09:37:06.118] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder13\Folder13.ini
+[2024-12-07 09:37:06.118] Nenhuma mudança de estado detectada
+[2024-12-07 09:37:06.222] WinEventProc - Mudança de foco para: Everything
+[2024-12-07 09:37:06.223] UpdateActiveWindow - Nova janela ativa: Everything
+[2024-12-07 09:37:06.223] Ativando janela: Everything
+[2024-12-07 09:37:23.136] WinEventProc - Mudança de foco para: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:37:23.137] UpdateActiveWindow - Nova janela ativa: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:37:23.137] Ativando janela: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:38:17.172] WinEventProc - Mudança de foco para: PowerShell
+[2024-12-07 09:38:17.173] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 09:38:17.174] Desativando janela: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:38:17.177] Ativando janela: PowerShell
+[2024-12-07 09:38:21.472] Total de monitores: 2
+[2024-12-07 09:38:21.490] Monitor 1 (\\.\DISPLAY1):
+[2024-12-07 09:38:21.492]   Bounds: {X=-1080,Y=-383,Width=1080,Height=1920} (Absoluto)
+[2024-12-07 09:38:21.492]   Working Area: {X=-1080,Y=-383,Width=1080,Height=1920}
+[2024-12-07 09:38:21.493]   Primary: False
+[2024-12-07 09:38:21.493]   BitsPerPixel: 32
+[2024-12-07 09:38:21.493] Monitor 2 (\\.\DISPLAY2):
+[2024-12-07 09:38:21.494]   Bounds: {X=0,Y=0,Width=1920,Height=1080} (Absoluto)
+[2024-12-07 09:38:21.494]   Working Area: {X=0,Y=34,Width=1920,Height=1046}
+[2024-12-07 09:38:21.494]   Primary: True
+[2024-12-07 09:38:21.495]   BitsPerPixel: 32
+[2024-12-07 09:38:21.496] === Detalhes dos Screens ===
+[2024-12-07 09:38:21.496] Screen: \\.\DISPLAY1 Config: \\.\DISPLAY2
+[2024-12-07 09:38:21.496] Screen: \\.\DISPLAY2 Config: \\.\DISPLAY2
+[2024-12-07 09:38:21.497] ===========================
+[2024-12-07 09:38:21.497] Usando monitor: \\.\DISPLAY2
+[2024-12-07 09:38:21.498] Tentando posicionar em - X:70, Y:-5
+[2024-12-07 09:38:21.501] Ignorando salvamento durante inicialização
+[2024-12-07 09:38:21.517] Ignorando salvamento durante inicialização
+[2024-12-07 09:38:21.541] Posição final: X=70, Y=-5 em \\.\DISPLAY2
+[2024-12-07 09:38:22.142] WinEventProc - Mudança de foco para: PowerShell
+[2024-12-07 09:38:22.143] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 09:38:22.143] Ativando janela: PowerShell
+[2024-12-07 09:38:28.449] Total de monitores: 2
+[2024-12-07 09:38:28.467] Monitor 1 (\\.\DISPLAY1):
+[2024-12-07 09:38:28.468]   Bounds: {X=-1080,Y=-383,Width=1080,Height=1920} (Absoluto)
+[2024-12-07 09:38:28.468]   Working Area: {X=-1080,Y=-383,Width=1080,Height=1920}
+[2024-12-07 09:38:28.469]   Primary: False
+[2024-12-07 09:38:28.469]   BitsPerPixel: 32
+[2024-12-07 09:38:28.469] Monitor 2 (\\.\DISPLAY2):
+[2024-12-07 09:38:28.469]   Bounds: {X=0,Y=0,Width=1920,Height=1080} (Absoluto)
+[2024-12-07 09:38:28.470]   Working Area: {X=0,Y=34,Width=1920,Height=1046}
+[2024-12-07 09:38:28.470]   Primary: True
+[2024-12-07 09:38:28.471]   BitsPerPixel: 32
+[2024-12-07 09:38:28.472] === Detalhes dos Screens ===
+[2024-12-07 09:38:28.472] Screen: \\.\DISPLAY1 Config: \\.\DISPLAY2
+[2024-12-07 09:38:28.472] Screen: \\.\DISPLAY2 Config: \\.\DISPLAY2
+[2024-12-07 09:38:28.472] ===========================
+[2024-12-07 09:38:28.473] Usando monitor: \\.\DISPLAY2
+[2024-12-07 09:38:28.474] Tentando posicionar em - X:70, Y:-5
+[2024-12-07 09:38:28.477] Ignorando salvamento durante inicialização
+[2024-12-07 09:38:28.493] Ignorando salvamento durante inicialização
+[2024-12-07 09:38:28.509] Posição final: X=70, Y=-5 em \\.\DISPLAY2
+[2024-12-07 09:38:32.371] Estado interno - IsActive: False, Title: PowerShell
+[2024-12-07 09:38:32.382] WinEventProc - Mudança de foco para: PowerShell
+[2024-12-07 09:38:32.383] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 09:38:32.383] Desativando janela: PowerShell
+[2024-12-07 09:38:32.385] Ativando janela: PowerShell
+[2024-12-07 09:38:33.415] WinEventProc - Mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\DropdownBar\DropdownBar.ini
+[2024-12-07 09:38:33.415] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\DropdownBar\DropdownBar.ini
+[2024-12-07 09:38:33.416] Desativando janela: PowerShell
+[2024-12-07 09:38:33.669] WinEventProc - Mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder13\Folder13.ini
+[2024-12-07 09:38:33.669] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder13\Folder13.ini
+[2024-12-07 09:38:33.670] Nenhuma mudança de estado detectada
+[2024-12-07 09:38:34.283] WinEventProc - Mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder01\Folder01.ini
+[2024-12-07 09:38:34.283] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder01\Folder01.ini
+[2024-12-07 09:38:34.283] Nenhuma mudança de estado detectada
+[2024-12-07 09:38:34.577] WinEventProc - Mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder13\Folder13.ini
+[2024-12-07 09:38:34.577] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder13\Folder13.ini
+[2024-12-07 09:38:34.578] Nenhuma mudança de estado detectada
+[2024-12-07 09:38:34.629] WinEventProc - Mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder01\Folder01.ini
+[2024-12-07 09:38:34.629] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder01\Folder01.ini
+[2024-12-07 09:38:34.630] Nenhuma mudança de estado detectada
+[2024-12-07 09:38:35.144] WinEventProc - Mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder13\Folder13.ini
+[2024-12-07 09:38:35.145] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder13\Folder13.ini
+[2024-12-07 09:38:35.146] Nenhuma mudança de estado detectada
+[2024-12-07 09:38:35.242] WinEventProc - Mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder01\Folder01.ini
+[2024-12-07 09:38:35.242] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder01\Folder01.ini
+[2024-12-07 09:38:35.243] Nenhuma mudança de estado detectada
+[2024-12-07 09:38:41.530] WinEventProc - Mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder13\Folder13.ini
+[2024-12-07 09:38:41.531] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder13\Folder13.ini
+[2024-12-07 09:38:41.531] Nenhuma mudança de estado detectada
+[2024-12-07 09:38:41.666] WinEventProc - Nova janela detectada: Everything
+[2024-12-07 09:38:41.685] UpdateActiveWindow - Nova janela ativa: Everything
+[2024-12-07 09:38:41.686] Desativando janela: Everything
+[2024-12-07 09:38:41.690] Ativando janela: Everything
+[2024-12-07 09:38:41.695] WinEventProc - Mudança de foco para: Everything
+[2024-12-07 09:38:41.695] UpdateActiveWindow - Nova janela ativa: Everything
+[2024-12-07 09:38:41.696] Desativando janela: Everything
+[2024-12-07 09:38:41.702] Ativando janela: Everything
+[2024-12-07 09:38:43.531] WinEventProc - Janela fechada/ocultada: Everything
+[2024-12-07 09:38:45.162] Estado interno - IsActive: False, Title: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:38:45.172] WinEventProc - Mudança de foco para: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:38:45.173] UpdateActiveWindow - Nova janela ativa: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:38:45.173] Desativando janela: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:38:45.176] Ativando janela: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:38:45.191] WinEventProc - Nova janela detectada: Chrome Legacy Window
+[2024-12-07 09:38:45.192] UpdateActiveWindow - Nova janela ativa: Chrome Legacy Window
+[2024-12-07 09:38:45.192] Desativando janela: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:38:47.858] Estado interno - IsActive: False, Title: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:38:47.866] WinEventProc - Mudança de foco para: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:38:47.867] UpdateActiveWindow - Nova janela ativa: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:38:47.867] Desativando janela: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:38:47.874] Ativando janela: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:38:48.770] Estado interno - IsActive: False, Title: PowerShell
+[2024-12-07 09:38:48.778] WinEventProc - Mudança de foco para: PowerShell
+[2024-12-07 09:38:48.778] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 09:38:48.779] Desativando janela: PowerShell
+[2024-12-07 09:38:48.781] Ativando janela: PowerShell
+[2024-12-07 09:38:49.635] Estado interno - IsActive: False, Title: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:38:49.645] WinEventProc - Mudança de foco para: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:38:49.645] UpdateActiveWindow - Nova janela ativa: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:38:49.646] Desativando janela: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:38:49.650] Ativando janela: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:38:49.669] WinEventProc - Nova janela detectada: Chrome Legacy Window
+[2024-12-07 09:38:49.670] UpdateActiveWindow - Nova janela ativa: Chrome Legacy Window
+[2024-12-07 09:38:49.670] Desativando janela: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:38:53.825] WinEventProc - Janela fechada/ocultada: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:38:53.851] WinEventProc - Mudança de foco para: PowerShell
+[2024-12-07 09:38:53.852] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 09:38:53.853] Ativando janela: PowerShell
+[2024-12-07 09:38:55.148] WinEventProc - Mudança de foco para: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:38:55.149] UpdateActiveWindow - Nova janela ativa: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:38:55.149] Desativando janela: PowerShell
+[2024-12-07 09:38:55.156] Ativando janela: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:39:52.817] Total de monitores: 2
+[2024-12-07 09:39:52.836] Monitor 1 (\\.\DISPLAY1):
+[2024-12-07 09:39:52.837]   Bounds: {X=-1080,Y=-383,Width=1080,Height=1920} (Absoluto)
+[2024-12-07 09:39:52.837]   Working Area: {X=-1080,Y=-383,Width=1080,Height=1920}
+[2024-12-07 09:39:52.838]   Primary: False
+[2024-12-07 09:39:52.838]   BitsPerPixel: 32
+[2024-12-07 09:39:52.838] Monitor 2 (\\.\DISPLAY2):
+[2024-12-07 09:39:52.839]   Bounds: {X=0,Y=0,Width=1920,Height=1080} (Absoluto)
+[2024-12-07 09:39:52.839]   Working Area: {X=0,Y=34,Width=1920,Height=1046}
+[2024-12-07 09:39:52.840]   Primary: True
+[2024-12-07 09:39:52.840]   BitsPerPixel: 32
+[2024-12-07 09:39:52.841] === Detalhes dos Screens ===
+[2024-12-07 09:39:52.841] Screen: \\.\DISPLAY1 Config: \\.\DISPLAY2
+[2024-12-07 09:39:52.842] Screen: \\.\DISPLAY2 Config: \\.\DISPLAY2
+[2024-12-07 09:39:52.842] ===========================
+[2024-12-07 09:39:52.842] Usando monitor: \\.\DISPLAY2
+[2024-12-07 09:39:52.843] Tentando posicionar em - X:70, Y:-5
+[2024-12-07 09:39:52.846] Ignorando salvamento durante inicialização
+[2024-12-07 09:39:52.862] Ignorando salvamento durante inicialização
+[2024-12-07 09:39:52.875] Posição final: X=70, Y=-5 em \\.\DISPLAY2
+[2024-12-07 09:39:54.979] WinEventProc - Mudança de foco para: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:39:54.980] UpdateActiveWindow - Nova janela ativa: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:39:55.894] WinEventProc - Mudança de foco para: PowerShell
+[2024-12-07 09:39:55.894] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 09:39:57.018] WinEventProc - Mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\DropdownBar\DropdownBar.ini
+[2024-12-07 09:39:57.019] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\DropdownBar\DropdownBar.ini
+[2024-12-07 09:39:57.272] WinEventProc - Mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder13\Folder13.ini
+[2024-12-07 09:39:58.443] WinEventProc - Mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder01\Folder01.ini
+[2024-12-07 09:39:59.917] WinEventProc - Mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder13\Folder13.ini
+[2024-12-07 09:39:59.918] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder13\Folder13.ini
+[2024-12-07 09:40:00.069] WinEventProc - Mudança de foco para: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:40:00.069] UpdateActiveWindow - Nova janela ativa: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:40:00.071] WinEventProc - Nova janela detectada: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:40:00.092] WinEventProc - Nova janela detectada: Chrome Legacy Window
+[2024-12-07 09:40:00.307] WinEventProc - Nova janela detectada: Nova guia
+[2024-12-07 09:40:02.245] WinEventProc - Mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\DropdownBar\DropdownBar.ini
+[2024-12-07 09:40:02.246] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\DropdownBar\DropdownBar.ini
+[2024-12-07 09:40:02.497] WinEventProc - Mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder13\Folder13.ini
+[2024-12-07 09:40:03.103] WinEventProc - Mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder01\Folder01.ini
+[2024-12-07 09:40:03.465] WinEventProc - Mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder13\Folder13.ini
+[2024-12-07 09:40:03.466] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder13\Folder13.ini
+[2024-12-07 09:40:03.538] WinEventProc - Mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder01\Folder01.ini
+[2024-12-07 09:40:04.533] WinEventProc - Mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder13\Folder13.ini
+[2024-12-07 09:40:04.534] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder13\Folder13.ini
+[2024-12-07 09:40:04.657] WinEventProc - Mudança de foco para: Everything
+[2024-12-07 09:40:04.658] UpdateActiveWindow - Nova janela ativa: Everything
+[2024-12-07 09:40:04.660] WinEventProc - Nova janela detectada: Everything
+[2024-12-07 09:40:06.385] WinEventProc - Mudança de foco para: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:40:06.386] UpdateActiveWindow - Nova janela ativa: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:40:07.578] WinEventProc - Mudança de foco para: PowerShell
+[2024-12-07 09:40:07.578] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 09:40:08.827] WinEventProc - Mudança de foco para: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:40:08.832] UpdateActiveWindow - Nova janela ativa: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:40:12.795] Estado interno - IsActive: True, Title: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:40:12.795] Minimizando janela ativa
+[2024-12-07 09:40:12.815] WinEventProc - Mudança de foco para: PowerShell
+[2024-12-07 09:40:12.861] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 09:40:32.810] WinEventProc - Mudança de foco para: Everything
+[2024-12-07 09:40:32.811] UpdateActiveWindow - Nova janela ativa: Everything
+[2024-12-07 09:40:32.955] WinEventProc - Janela fechada/ocultada: Everything
+[2024-12-07 09:40:37.479] WinEventProc - Mudança de foco para: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:40:37.479] UpdateActiveWindow - Nova janela ativa: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:44:07.508] Total de monitores: 2
+[2024-12-07 09:44:07.527] Monitor 1 (\\.\DISPLAY1):
+[2024-12-07 09:44:07.528]   Bounds: {X=-1080,Y=-383,Width=1080,Height=1920} (Absoluto)
+[2024-12-07 09:44:07.528]   Working Area: {X=-1080,Y=-383,Width=1080,Height=1920}
+[2024-12-07 09:44:07.529]   Primary: False
+[2024-12-07 09:44:07.529]   BitsPerPixel: 32
+[2024-12-07 09:44:07.529] Monitor 2 (\\.\DISPLAY2):
+[2024-12-07 09:44:07.530]   Bounds: {X=0,Y=0,Width=1920,Height=1080} (Absoluto)
+[2024-12-07 09:44:07.530]   Working Area: {X=0,Y=34,Width=1920,Height=1046}
+[2024-12-07 09:44:07.531]   Primary: True
+[2024-12-07 09:44:07.531]   BitsPerPixel: 32
+[2024-12-07 09:44:07.532] === Detalhes dos Screens ===
+[2024-12-07 09:44:07.533] Screen: \\.\DISPLAY1 Config: \\.\DISPLAY2
+[2024-12-07 09:44:07.533] Screen: \\.\DISPLAY2 Config: \\.\DISPLAY2
+[2024-12-07 09:44:07.534] ===========================
+[2024-12-07 09:44:07.534] Usando monitor: \\.\DISPLAY2
+[2024-12-07 09:44:07.535] Tentando posicionar em - X:70, Y:-5
+[2024-12-07 09:44:07.538] Ignorando salvamento durante inicialização
+[2024-12-07 09:44:07.553] Ignorando salvamento durante inicialização
+[2024-12-07 09:44:07.569] Posição final: X=70, Y=-5 em \\.\DISPLAY2
+[2024-12-07 09:44:08.973] WinEventProc - Mudança de foco para: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 09:44:08.974] UpdateActiveWindow - Nova janela ativa: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 09:45:55.709] Total de monitores: 2
+[2024-12-07 09:45:55.728] Monitor 1 (\\.\DISPLAY1):
+[2024-12-07 09:45:55.729]   Bounds: {X=-1080,Y=-383,Width=1080,Height=1920} (Absoluto)
+[2024-12-07 09:45:55.730]   Working Area: {X=-1080,Y=-383,Width=1080,Height=1920}
+[2024-12-07 09:45:55.731]   Primary: False
+[2024-12-07 09:45:55.731]   BitsPerPixel: 32
+[2024-12-07 09:45:55.732] Monitor 2 (\\.\DISPLAY2):
+[2024-12-07 09:45:55.732]   Bounds: {X=0,Y=0,Width=1920,Height=1080} (Absoluto)
+[2024-12-07 09:45:55.733]   Working Area: {X=0,Y=34,Width=1920,Height=1046}
+[2024-12-07 09:45:55.733]   Primary: True
+[2024-12-07 09:45:55.734]   BitsPerPixel: 32
+[2024-12-07 09:45:55.735] === Detalhes dos Screens ===
+[2024-12-07 09:45:55.735] Screen: \\.\DISPLAY1 Config: \\.\DISPLAY2
+[2024-12-07 09:45:55.735] Screen: \\.\DISPLAY2 Config: \\.\DISPLAY2
+[2024-12-07 09:45:55.736] ===========================
+[2024-12-07 09:45:55.736] Usando monitor: \\.\DISPLAY2
+[2024-12-07 09:45:55.737] Tentando posicionar em - X:70, Y:-5
+[2024-12-07 09:45:55.768] Posição final: X=70, Y=-5 em \\.\DISPLAY2
+[2024-12-07 09:45:57.796] WinEventProc - Mudança de foco para: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 09:45:57.797] UpdateActiveWindow - Nova janela ativa: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 09:46:09.095] WinEventProc - Mudança de foco para: PowerShell
+[2024-12-07 09:46:09.096] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 09:46:15.867] Total de monitores: 2
+[2024-12-07 09:46:15.886] Monitor 1 (\\.\DISPLAY1):
+[2024-12-07 09:46:15.887]   Bounds: {X=-1080,Y=-383,Width=1080,Height=1920} (Absoluto)
+[2024-12-07 09:46:15.887]   Working Area: {X=-1080,Y=-383,Width=1080,Height=1920}
+[2024-12-07 09:46:15.887]   Primary: False
+[2024-12-07 09:46:15.888]   BitsPerPixel: 32
+[2024-12-07 09:46:15.888] Monitor 2 (\\.\DISPLAY2):
+[2024-12-07 09:46:15.888]   Bounds: {X=0,Y=0,Width=1920,Height=1080} (Absoluto)
+[2024-12-07 09:46:15.888]   Working Area: {X=0,Y=34,Width=1920,Height=1046}
+[2024-12-07 09:46:15.888]   Primary: True
+[2024-12-07 09:46:15.889]   BitsPerPixel: 32
+[2024-12-07 09:46:15.889] === Detalhes dos Screens ===
+[2024-12-07 09:46:15.890] Screen: \\.\DISPLAY1 Config: \\.\DISPLAY2
+[2024-12-07 09:46:15.890] Screen: \\.\DISPLAY2 Config: \\.\DISPLAY2
+[2024-12-07 09:46:15.890] ===========================
+[2024-12-07 09:46:15.890] Usando monitor: \\.\DISPLAY2
+[2024-12-07 09:46:15.891] Tentando posicionar em - X:70, Y:-5
+[2024-12-07 09:46:15.923] Posição final: X=70, Y=-5 em \\.\DISPLAY2
+[2024-12-07 09:46:18.766] WinEventProc - Mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\DropdownBar\DropdownBar.ini
+[2024-12-07 09:46:18.767] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\DropdownBar\DropdownBar.ini
+[2024-12-07 09:46:19.468] WinEventProc - Mudança de foco para: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 09:46:19.468] UpdateActiveWindow - Nova janela ativa: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 09:46:20.382] WinEventProc - Mudança de foco para: PowerShell
+[2024-12-07 09:46:20.383] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 09:46:22.691] Estado interno - IsActive: False, Title: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:46:22.726] WinEventProc - Mudança de foco para: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:46:22.727] UpdateActiveWindow - Nova janela ativa: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:46:22.728] WinEventProc - Nova janela detectada: Chrome Legacy Window
+[2024-12-07 09:46:23.508] WinEventProc - Mudança de foco para: PowerShell
+[2024-12-07 09:46:23.509] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 09:46:24.618] Estado interno - IsActive: False, Title: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 09:46:24.627] WinEventProc - Mudança de foco para: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 09:46:24.628] UpdateActiveWindow - Nova janela ativa: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 09:49:21.724] WinEventProc - Mudança de foco para: PowerShell
+[2024-12-07 09:49:21.726] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 09:49:27.885] Total de monitores: 2
+[2024-12-07 09:49:27.903] Monitor 1 (\\.\DISPLAY1):
+[2024-12-07 09:49:27.904]   Bounds: {X=-1080,Y=-383,Width=1080,Height=1920} (Absoluto)
+[2024-12-07 09:49:27.904]   Working Area: {X=-1080,Y=-383,Width=1080,Height=1920}
+[2024-12-07 09:49:27.905]   Primary: False
+[2024-12-07 09:49:27.905]   BitsPerPixel: 32
+[2024-12-07 09:49:27.905] Monitor 2 (\\.\DISPLAY2):
+[2024-12-07 09:49:27.905]   Bounds: {X=0,Y=0,Width=1920,Height=1080} (Absoluto)
+[2024-12-07 09:49:27.906]   Working Area: {X=0,Y=34,Width=1920,Height=1046}
+[2024-12-07 09:49:27.906]   Primary: True
+[2024-12-07 09:49:27.906]   BitsPerPixel: 32
+[2024-12-07 09:49:27.907] === Detalhes dos Screens ===
+[2024-12-07 09:49:27.907] Screen: \\.\DISPLAY1 Config: \\.\DISPLAY2
+[2024-12-07 09:49:27.907] Screen: \\.\DISPLAY2 Config: \\.\DISPLAY2
+[2024-12-07 09:49:27.907] ===========================
+[2024-12-07 09:49:27.908] Usando monitor: \\.\DISPLAY2
+[2024-12-07 09:49:27.908] Tentando posicionar em - X:70, Y:-5
+[2024-12-07 09:49:27.942] Posição final: X=70, Y=-5 em \\.\DISPLAY2
+[2024-12-07 09:49:29.712] WinEventProc - Mudança de foco para: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 09:49:29.713] UpdateActiveWindow - Nova janela ativa: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 09:49:30.970] WinEventProc - Mudança de foco para: PowerShell
+[2024-12-07 09:49:30.970] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 09:49:33.082] Estado interno - IsActive: False, Title: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:49:33.090] WinEventProc - Mudança de foco para: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:49:33.091] UpdateActiveWindow - Nova janela ativa: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:49:33.112] WinEventProc - Nova janela detectada: Chrome Legacy Window
+[2024-12-07 09:49:34.763] WinEventProc - Janela fechada/ocultada: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 09:49:34.788] WinEventProc - Mudança de foco para: PowerShell
+[2024-12-07 09:49:34.789] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 09:49:43.309] WinEventProc - Mudança de foco para: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 09:49:43.310] UpdateActiveWindow - Nova janela ativa: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 09:52:30.061] WinEventProc - Mudança de foco para: PowerShell
+[2024-12-07 09:52:30.062] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 09:52:40.762] Total de monitores: 2
+[2024-12-07 09:52:40.780] Monitor 1 (\\.\DISPLAY1):
+[2024-12-07 09:52:40.781]   Bounds: {X=-1080,Y=-383,Width=1080,Height=1920} (Absoluto)
+[2024-12-07 09:52:40.782]   Working Area: {X=-1080,Y=-383,Width=1080,Height=1920}
+[2024-12-07 09:52:40.782]   Primary: False
+[2024-12-07 09:52:40.782]   BitsPerPixel: 32
+[2024-12-07 09:52:40.783] Monitor 2 (\\.\DISPLAY2):
+[2024-12-07 09:52:40.783]   Bounds: {X=0,Y=0,Width=1920,Height=1080} (Absoluto)
+[2024-12-07 09:52:40.783]   Working Area: {X=0,Y=34,Width=1920,Height=1046}
+[2024-12-07 09:52:40.783]   Primary: True
+[2024-12-07 09:52:40.784]   BitsPerPixel: 32
+[2024-12-07 09:52:40.784] === Detalhes dos Screens ===
+[2024-12-07 09:52:40.784] Screen: \\.\DISPLAY1 Config: \\.\DISPLAY2
+[2024-12-07 09:52:40.785] Screen: \\.\DISPLAY2 Config: \\.\DISPLAY2
+[2024-12-07 09:52:40.785] ===========================
+[2024-12-07 09:52:40.785] Usando monitor: \\.\DISPLAY2
+[2024-12-07 09:52:40.785] Tentando posicionar em - X:70, Y:-5
+[2024-12-07 09:52:40.815] Posição final: X=70, Y=-5 em \\.\DISPLAY2
+[2024-12-07 09:52:41.966] WinEventProc - Mudança de foco para: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 09:52:41.967] UpdateActiveWindow - Nova janela ativa: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 09:55:10.684] WinEventProc - Mudança de foco para: PowerShell
+[2024-12-07 09:55:10.685] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 09:55:19.274] Total de monitores: 2
+[2024-12-07 09:55:19.292] Monitor 1 (\\.\DISPLAY1):
+[2024-12-07 09:55:19.293]   Bounds: {X=-1080,Y=-383,Width=1080,Height=1920} (Absoluto)
+[2024-12-07 09:55:19.293]   Working Area: {X=-1080,Y=-383,Width=1080,Height=1920}
+[2024-12-07 09:55:19.293]   Primary: False
+[2024-12-07 09:55:19.294]   BitsPerPixel: 32
+[2024-12-07 09:55:19.294] Monitor 2 (\\.\DISPLAY2):
+[2024-12-07 09:55:19.294]   Bounds: {X=0,Y=0,Width=1920,Height=1080} (Absoluto)
+[2024-12-07 09:55:19.294]   Working Area: {X=0,Y=34,Width=1920,Height=1046}
+[2024-12-07 09:55:19.295]   Primary: True
+[2024-12-07 09:55:19.295]   BitsPerPixel: 32
+[2024-12-07 09:55:19.296] === Detalhes dos Screens ===
+[2024-12-07 09:55:19.296] Screen: \\.\DISPLAY1 Config: \\.\DISPLAY2
+[2024-12-07 09:55:19.296] Screen: \\.\DISPLAY2 Config: \\.\DISPLAY2
+[2024-12-07 09:55:19.296] ===========================
+[2024-12-07 09:55:19.297] Usando monitor: \\.\DISPLAY2
+[2024-12-07 09:55:19.297] Tentando posicionar em - X:70, Y:-5
+[2024-12-07 09:55:19.328] Posição final: X=70, Y=-5 em \\.\DISPLAY2
+[2024-12-07 09:55:21.667] WinEventProc - Mudança de foco para: PowerShell
+[2024-12-07 09:55:21.668] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 09:55:22.380] WinEventProc - Mudança de foco para: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:55:22.381] UpdateActiveWindow - Nova janela ativa: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:55:23.525] WinEventProc - Mudança de foco para: PowerShell
+[2024-12-07 09:55:23.525] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 09:55:25.409] WinEventProc - Mudança de foco para: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:55:25.410] UpdateActiveWindow - Nova janela ativa: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:55:33.571] Estado interno - IsActive: False, Title: PowerShell
+[2024-12-07 09:55:33.580] WinEventProc - Mudança de foco para: PowerShell
+[2024-12-07 09:55:33.581] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 09:55:34.642] Estado interno - IsActive: False, Title: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:55:34.653] WinEventProc - Mudança de foco para: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:55:34.653] UpdateActiveWindow - Nova janela ativa: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:56:23.759] WinEventProc - Nova janela detectada: Chrome Legacy Window
+[2024-12-07 09:57:44.503] Total de monitores: 2
+[2024-12-07 09:57:44.522] Monitor 1 (\\.\DISPLAY1):
+[2024-12-07 09:57:44.523]   Bounds: {X=-1080,Y=-383,Width=1080,Height=1920} (Absoluto)
+[2024-12-07 09:57:44.524]   Working Area: {X=-1080,Y=-383,Width=1080,Height=1920}
+[2024-12-07 09:57:44.524]   Primary: False
+[2024-12-07 09:57:44.524]   BitsPerPixel: 32
+[2024-12-07 09:57:44.524] Monitor 2 (\\.\DISPLAY2):
+[2024-12-07 09:57:44.525]   Bounds: {X=0,Y=0,Width=1920,Height=1080} (Absoluto)
+[2024-12-07 09:57:44.525]   Working Area: {X=0,Y=34,Width=1920,Height=1046}
+[2024-12-07 09:57:44.525]   Primary: True
+[2024-12-07 09:57:44.525]   BitsPerPixel: 32
+[2024-12-07 09:57:44.526] === Detalhes dos Screens ===
+[2024-12-07 09:57:44.526] Screen: \\.\DISPLAY1 Config: \\.\DISPLAY2
+[2024-12-07 09:57:44.527] Screen: \\.\DISPLAY2 Config: \\.\DISPLAY2
+[2024-12-07 09:57:44.527] ===========================
+[2024-12-07 09:57:44.527] Usando monitor: \\.\DISPLAY2
+[2024-12-07 09:57:44.528] Tentando posicionar em - X:70, Y:-5
+[2024-12-07 09:57:44.560] Posição final: X=70, Y=-5 em \\.\DISPLAY2
+[2024-12-07 09:57:46.087] WinEventProc - Mudança de foco para: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:57:46.088] UpdateActiveWindow - Nova janela ativa: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:58:36.312] Total de monitores: 2
+[2024-12-07 09:58:36.331] Monitor 1 (\\.\DISPLAY1):
+[2024-12-07 09:58:36.332]   Bounds: {X=-1080,Y=-383,Width=1080,Height=1920} (Absoluto)
+[2024-12-07 09:58:36.332]   Working Area: {X=-1080,Y=-383,Width=1080,Height=1920}
+[2024-12-07 09:58:36.333]   Primary: False
+[2024-12-07 09:58:36.333]   BitsPerPixel: 32
+[2024-12-07 09:58:36.334] Monitor 2 (\\.\DISPLAY2):
+[2024-12-07 09:58:36.334]   Bounds: {X=0,Y=0,Width=1920,Height=1080} (Absoluto)
+[2024-12-07 09:58:36.334]   Working Area: {X=0,Y=34,Width=1920,Height=1046}
+[2024-12-07 09:58:36.334]   Primary: True
+[2024-12-07 09:58:36.335]   BitsPerPixel: 32
+[2024-12-07 09:58:36.335] === Detalhes dos Screens ===
+[2024-12-07 09:58:36.336] Screen: \\.\DISPLAY1 Config: \\.\DISPLAY2
+[2024-12-07 09:58:36.336] Screen: \\.\DISPLAY2 Config: \\.\DISPLAY2
+[2024-12-07 09:58:36.336] ===========================
+[2024-12-07 09:58:36.337] Usando monitor: \\.\DISPLAY2
+[2024-12-07 09:58:36.337] Tentando posicionar em - X:70, Y:-5
+[2024-12-07 09:58:36.366] Posição final: X=70, Y=-5 em \\.\DISPLAY2
+[2024-12-07 09:58:38.702] WinEventProc - Mudança de foco para: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:58:38.703] UpdateActiveWindow - Nova janela ativa: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:58:45.822] WinEventProc - Mudança de foco para: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 09:58:45.823] UpdateActiveWindow - Nova janela ativa: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 10:00:12.071] WinEventProc - Mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\DropdownBar\DropdownBar.ini
+[2024-12-07 10:00:12.072] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\DropdownBar\DropdownBar.ini
+[2024-12-07 10:00:12.913] WinEventProc - Mudança de foco para: PowerShell
+[2024-12-07 10:00:12.914] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 10:00:17.975] Total de monitores: 2
+[2024-12-07 10:00:17.994] Monitor 1 (\\.\DISPLAY1):
+[2024-12-07 10:00:17.995]   Bounds: {X=-1080,Y=-383,Width=1080,Height=1920} (Absoluto)
+[2024-12-07 10:00:17.995]   Working Area: {X=-1080,Y=-383,Width=1080,Height=1920}
+[2024-12-07 10:00:17.996]   Primary: False
+[2024-12-07 10:00:17.996]   BitsPerPixel: 32
+[2024-12-07 10:00:17.996] Monitor 2 (\\.\DISPLAY2):
+[2024-12-07 10:00:17.997]   Bounds: {X=0,Y=0,Width=1920,Height=1080} (Absoluto)
+[2024-12-07 10:00:17.997]   Working Area: {X=0,Y=34,Width=1920,Height=1046}
+[2024-12-07 10:00:17.998]   Primary: True
+[2024-12-07 10:00:17.998]   BitsPerPixel: 32
+[2024-12-07 10:00:17.999] === Detalhes dos Screens ===
+[2024-12-07 10:00:17.999] Screen: \\.\DISPLAY1 Config: \\.\DISPLAY2
+[2024-12-07 10:00:17.999] Screen: \\.\DISPLAY2 Config: \\.\DISPLAY2
+[2024-12-07 10:00:18.000] ===========================
+[2024-12-07 10:00:18.000] Usando monitor: \\.\DISPLAY2
+[2024-12-07 10:00:18.000] Tentando posicionar em - X:70, Y:-5
+[2024-12-07 10:00:18.033] Posição final: X=70, Y=-5 em \\.\DISPLAY2
+[2024-12-07 10:00:37.023] WinEventProc - Mudança de foco para: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 10:00:37.024] UpdateActiveWindow - Nova janela ativa: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 10:02:11.303] Total de monitores: 2
+[2024-12-07 10:02:11.323] Monitor 1 (\\.\DISPLAY1):
+[2024-12-07 10:02:11.324]   Bounds: {X=-1080,Y=-383,Width=1080,Height=1920} (Absoluto)
+[2024-12-07 10:02:11.324]   Working Area: {X=-1080,Y=-383,Width=1080,Height=1920}
+[2024-12-07 10:02:11.325]   Primary: False
+[2024-12-07 10:02:11.325]   BitsPerPixel: 32
+[2024-12-07 10:02:11.326] Monitor 2 (\\.\DISPLAY2):
+[2024-12-07 10:02:11.326]   Bounds: {X=0,Y=0,Width=1920,Height=1080} (Absoluto)
+[2024-12-07 10:02:11.327]   Working Area: {X=0,Y=34,Width=1920,Height=1046}
+[2024-12-07 10:02:11.327]   Primary: True
+[2024-12-07 10:02:11.328]   BitsPerPixel: 32
+[2024-12-07 10:02:11.329] === Detalhes dos Screens ===
+[2024-12-07 10:02:11.329] Screen: \\.\DISPLAY1 Config: \\.\DISPLAY2
+[2024-12-07 10:02:11.330] Screen: \\.\DISPLAY2 Config: \\.\DISPLAY2
+[2024-12-07 10:02:11.331] ===========================
+[2024-12-07 10:02:11.332] Usando monitor: \\.\DISPLAY2
+[2024-12-07 10:02:11.332] Tentando posicionar em - X:70, Y:-5
+[2024-12-07 10:02:11.372] Posição final: X=70, Y=-5 em \\.\DISPLAY2
+[2024-12-07 10:02:26.305] WinEventProc - Mudança de foco para: PowerShell
+[2024-12-07 10:02:26.306] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 10:02:35.222] WinEventProc - Mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\DropdownBar\DropdownBar.ini
+[2024-12-07 10:02:35.223] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\DropdownBar\DropdownBar.ini
+[2024-12-07 10:02:55.423] WinEventProc - Mudança de foco para: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 10:02:55.424] UpdateActiveWindow - Nova janela ativa: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 10:04:32.921] Total de monitores: 2
+[2024-12-07 10:04:32.940] Monitor 1 (\\.\DISPLAY1):
+[2024-12-07 10:04:32.941]   Bounds: {X=-1080,Y=-383,Width=1080,Height=1920} (Absoluto)
+[2024-12-07 10:04:32.941]   Working Area: {X=-1080,Y=-383,Width=1080,Height=1920}
+[2024-12-07 10:04:32.942]   Primary: False
+[2024-12-07 10:04:32.942]   BitsPerPixel: 32
+[2024-12-07 10:04:32.943] Monitor 2 (\\.\DISPLAY2):
+[2024-12-07 10:04:32.943]   Bounds: {X=0,Y=0,Width=1920,Height=1080} (Absoluto)
+[2024-12-07 10:04:32.944]   Working Area: {X=0,Y=34,Width=1920,Height=1046}
+[2024-12-07 10:04:32.945]   Primary: True
+[2024-12-07 10:04:32.945]   BitsPerPixel: 32
+[2024-12-07 10:04:32.946] === Detalhes dos Screens ===
+[2024-12-07 10:04:32.946] Screen: \\.\DISPLAY1 Config: \\.\DISPLAY2
+[2024-12-07 10:04:32.947] Screen: \\.\DISPLAY2 Config: \\.\DISPLAY2
+[2024-12-07 10:04:32.947] ===========================
+[2024-12-07 10:04:32.948] Usando monitor: \\.\DISPLAY2
+[2024-12-07 10:04:32.948] Tentando posicionar em - X:70, Y:-5
+[2024-12-07 10:04:32.981] Posição final: X=70, Y=-5 em \\.\DISPLAY2
+[2024-12-07 10:04:36.928] WinEventProc - Mudança de foco para: PowerShell
+[2024-12-07 10:04:36.929] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 10:04:40.831] Total de monitores: 2
+[2024-12-07 10:04:40.848] Monitor 1 (\\.\DISPLAY1):
+[2024-12-07 10:04:40.850]   Bounds: {X=-1080,Y=-383,Width=1080,Height=1920} (Absoluto)
+[2024-12-07 10:04:40.850]   Working Area: {X=-1080,Y=-383,Width=1080,Height=1920}
+[2024-12-07 10:04:40.851]   Primary: False
+[2024-12-07 10:04:40.852]   BitsPerPixel: 32
+[2024-12-07 10:04:40.853] Monitor 2 (\\.\DISPLAY2):
+[2024-12-07 10:04:40.853]   Bounds: {X=0,Y=0,Width=1920,Height=1080} (Absoluto)
+[2024-12-07 10:04:40.854]   Working Area: {X=0,Y=34,Width=1920,Height=1046}
+[2024-12-07 10:04:40.855]   Primary: True
+[2024-12-07 10:04:40.855]   BitsPerPixel: 32
+[2024-12-07 10:04:40.856] === Detalhes dos Screens ===
+[2024-12-07 10:04:40.856] Screen: \\.\DISPLAY1 Config: \\.\DISPLAY2
+[2024-12-07 10:04:40.857] Screen: \\.\DISPLAY2 Config: \\.\DISPLAY2
+[2024-12-07 10:04:40.858] ===========================
+[2024-12-07 10:04:40.858] Usando monitor: \\.\DISPLAY2
+[2024-12-07 10:04:40.859] Tentando posicionar em - X:70, Y:-5
+[2024-12-07 10:04:40.893] Posição final: X=70, Y=-5 em \\.\DISPLAY2
+[2024-12-07 10:04:47.509] WinEventProc - Mudança de foco para: PowerShell
+[2024-12-07 10:04:47.510] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 10:04:52.201] WinEventProc - Mudança de foco para: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 10:04:52.202] UpdateActiveWindow - Nova janela ativa: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 10:04:54.429] WinEventProc - Mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\DropdownBar\DropdownBar.ini
+[2024-12-07 10:04:54.430] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\DropdownBar\DropdownBar.ini
+[2024-12-07 10:04:54.765] WinEventProc - Mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenu1\SettingsMenu1.ini
+[2024-12-07 10:04:56.259] WinEventProc - Mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\DropdownBar\DropdownBar.ini
+[2024-12-07 10:04:56.261] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\DropdownBar\DropdownBar.ini
+[2024-12-07 10:04:56.508] WinEventProc - Mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder13\Folder13.ini
+[2024-12-07 10:04:56.633] WinEventProc - Mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\DropdownBar\DropdownBar.ini
+[2024-12-07 10:04:56.634] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\DropdownBar\DropdownBar.ini
+[2024-12-07 10:04:57.307] WinEventProc - Mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder13\Folder13.ini
+[2024-12-07 10:04:57.307] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder13\Folder13.ini
+[2024-12-07 10:04:57.383] WinEventProc - Mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder01\Folder01.ini
+[2024-12-07 10:05:01.547] WinEventProc - Mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder13\Folder13.ini
+[2024-12-07 10:05:01.547] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder13\Folder13.ini
+[2024-12-07 10:05:01.694] WinEventProc - Mudança de foco para: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 10:05:01.695] UpdateActiveWindow - Nova janela ativa: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 10:05:01.696] WinEventProc - Nova janela detectada: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 10:05:01.721] WinEventProc - Nova janela detectada: Chrome Legacy Window
+[2024-12-07 10:05:01.907] WinEventProc - Nova janela detectada: Nova guia
+[2024-12-07 10:05:04.318] WinEventProc - Nova janela detectada: Chrome Legacy Window
+[2024-12-07 10:05:07.493] WinEventProc - Mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\DropdownBar\DropdownBar.ini
+[2024-12-07 10:05:07.494] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\DropdownBar\DropdownBar.ini
+[2024-12-07 10:05:07.714] WinEventProc - Mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Apps\Volume\Volume.ini
+[2024-12-07 10:05:10.692] WinEventProc - Mudança de foco para: (87) Inscrições - YouTube - João Henrique — Microsoft? Edge
+[2024-12-07 10:05:10.692] UpdateActiveWindow - Nova janela ativa: (87) Inscrições - YouTube - João Henrique — Microsoft? Edge
+[2024-12-07 10:05:17.514] WinEventProc - Mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\DropdownBar\DropdownBar.ini
+[2024-12-07 10:05:17.515] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\DropdownBar\DropdownBar.ini
+[2024-12-07 10:05:22.584] WinEventProc - Janela fechada/ocultada: Nova guia - João Henrique — Microsoft? Edge
+[2024-12-07 10:05:22.608] WinEventProc - Mudança de foco para: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 10:05:22.608] UpdateActiveWindow - Nova janela ativa: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 10:08:49.665] WinEventProc - Mudança de foco para: Cursor
+[2024-12-07 10:08:50.273] WinEventProc - Mudança de foco para: NativeMethods.cs - MyTaskBar - Cursor
+[2024-12-07 10:08:50.274] UpdateActiveWindow - Nova janela ativa: NativeMethods.cs - MyTaskBar - Cursor
+[2024-12-07 10:08:54.781] WinEventProc - Mudança de foco para: PowerShell
+[2024-12-07 10:08:54.781] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 10:08:59.504] Total de monitores: 2
+[2024-12-07 10:08:59.522] Monitor 1 (\\.\DISPLAY1):
+[2024-12-07 10:08:59.524]   Bounds: {X=-1080,Y=-383,Width=1080,Height=1920} (Absoluto)
+[2024-12-07 10:08:59.525]   Working Area: {X=-1080,Y=-383,Width=1080,Height=1920}
+[2024-12-07 10:08:59.525]   Primary: False
+[2024-12-07 10:08:59.526]   BitsPerPixel: 32
+[2024-12-07 10:08:59.526] Monitor 2 (\\.\DISPLAY2):
+[2024-12-07 10:08:59.527]   Bounds: {X=0,Y=0,Width=1920,Height=1080} (Absoluto)
+[2024-12-07 10:08:59.527]   Working Area: {X=0,Y=34,Width=1920,Height=1046}
+[2024-12-07 10:08:59.528]   Primary: True
+[2024-12-07 10:08:59.529]   BitsPerPixel: 32
+[2024-12-07 10:08:59.530] === Detalhes dos Screens ===
+[2024-12-07 10:08:59.530] Screen: \\.\DISPLAY1 Config: \\.\DISPLAY2
+[2024-12-07 10:08:59.531] Screen: \\.\DISPLAY2 Config: \\.\DISPLAY2
+[2024-12-07 10:08:59.531] ===========================
+[2024-12-07 10:08:59.532] Usando monitor: \\.\DISPLAY2
+[2024-12-07 10:08:59.533] Tentando posicionar em - X:70, Y:-5
+[2024-12-07 10:08:59.567] Posição final: X=70, Y=-5 em \\.\DISPLAY2
+[2024-12-07 10:09:01.183] WinEventProc - Mudança de foco para: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 10:09:01.183] UpdateActiveWindow - Nova janela ativa: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 10:09:37.895] WinEventProc - Mudança de foco para: PowerShell
+[2024-12-07 10:09:37.897] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 10:09:42.215] Total de monitores: 2
+[2024-12-07 10:09:42.233] Monitor 1 (\\.\DISPLAY1):
+[2024-12-07 10:09:42.235]   Bounds: {X=-1080,Y=-383,Width=1080,Height=1920} (Absoluto)
+[2024-12-07 10:09:42.236]   Working Area: {X=-1080,Y=-383,Width=1080,Height=1920}
+[2024-12-07 10:09:42.236]   Primary: False
+[2024-12-07 10:09:42.237]   BitsPerPixel: 32
+[2024-12-07 10:09:42.238] Monitor 2 (\\.\DISPLAY2):
+[2024-12-07 10:09:42.238]   Bounds: {X=0,Y=0,Width=1920,Height=1080} (Absoluto)
+[2024-12-07 10:09:42.239]   Working Area: {X=0,Y=34,Width=1920,Height=1046}
+[2024-12-07 10:09:42.240]   Primary: True
+[2024-12-07 10:09:42.241]   BitsPerPixel: 32
+[2024-12-07 10:09:42.242] === Detalhes dos Screens ===
+[2024-12-07 10:09:42.243] Screen: \\.\DISPLAY1 Config: \\.\DISPLAY2
+[2024-12-07 10:09:42.243] Screen: \\.\DISPLAY2 Config: \\.\DISPLAY2
+[2024-12-07 10:09:42.244] ===========================
+[2024-12-07 10:09:42.245] Usando monitor: \\.\DISPLAY2
+[2024-12-07 10:09:42.246] Tentando posicionar em - X:70, Y:-5
+[2024-12-07 10:09:42.282] Posição final: X=70, Y=-5 em \\.\DISPLAY2
+[2024-12-07 10:09:46.486] WinEventProc - Mudança de foco para: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 10:09:46.487] UpdateActiveWindow - Nova janela ativa: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 10:09:49.631] WinEventProc - Mudança de foco para: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 10:09:49.632] UpdateActiveWindow - Nova janela ativa: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 10:10:21.967] WinEventProc - Mudança de foco para: PowerShell
+[2024-12-07 10:10:21.969] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 10:10:23.260] WinEventProc - Nova janela detectada: CoreInput
+[2024-12-07 10:10:23.310] WinEventProc - Mudança de foco para: Pesquisar
+[2024-12-07 10:10:23.310] UpdateActiveWindow - Nova janela ativa: Pesquisar
+[2024-12-07 10:10:23.588] WinEventProc - Mudança de foco para: PowerShell
+[2024-12-07 10:10:23.588] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 10:10:24.226] WinEventProc - Nova janela detectada: Chrome Legacy Window
+[2024-12-07 10:10:28.401] Total de monitores: 2
+[2024-12-07 10:10:28.419] Monitor 1 (\\.\DISPLAY1):
+[2024-12-07 10:10:28.421]   Bounds: {X=-1080,Y=-383,Width=1080,Height=1920} (Absoluto)
+[2024-12-07 10:10:28.421]   Working Area: {X=-1080,Y=-383,Width=1080,Height=1920}
+[2024-12-07 10:10:28.422]   Primary: False
+[2024-12-07 10:10:28.423]   BitsPerPixel: 32
+[2024-12-07 10:10:28.423] Monitor 2 (\\.\DISPLAY2):
+[2024-12-07 10:10:28.424]   Bounds: {X=0,Y=0,Width=1920,Height=1080} (Absoluto)
+[2024-12-07 10:10:28.425]   Working Area: {X=0,Y=34,Width=1920,Height=1046}
+[2024-12-07 10:10:28.425]   Primary: True
+[2024-12-07 10:10:28.426]   BitsPerPixel: 32
+[2024-12-07 10:10:28.427] === Detalhes dos Screens ===
+[2024-12-07 10:10:28.427] Screen: \\.\DISPLAY1 Config: \\.\DISPLAY2
+[2024-12-07 10:10:28.428] Screen: \\.\DISPLAY2 Config: \\.\DISPLAY2
+[2024-12-07 10:10:28.428] ===========================
+[2024-12-07 10:10:28.429] Usando monitor: \\.\DISPLAY2
+[2024-12-07 10:10:28.430] Tentando posicionar em - X:70, Y:-5
+[2024-12-07 10:10:28.462] Posição final: X=70, Y=-5 em \\.\DISPLAY2
+[2024-12-07 10:10:38.263] WinEventProc - Mudança de foco para: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 10:10:38.264] UpdateActiveWindow - Nova janela ativa: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 10:10:44.911] WinEventProc - Mudança de foco para: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 10:10:44.911] UpdateActiveWindow - Nova janela ativa: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 10:12:55.524] WinEventProc - Mudança de foco para: PowerShell
+[2024-12-07 10:12:55.525] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 10:13:04.424] Total de monitores: 2
+[2024-12-07 10:13:04.442] Monitor 1 (\\.\DISPLAY1):
+[2024-12-07 10:13:04.443]   Bounds: {X=-1080,Y=-383,Width=1080,Height=1920} (Absoluto)
+[2024-12-07 10:13:04.445]   Working Area: {X=-1080,Y=-383,Width=1080,Height=1920}
+[2024-12-07 10:13:04.446]   Primary: False
+[2024-12-07 10:13:04.448]   BitsPerPixel: 32
+[2024-12-07 10:13:04.448] Monitor 2 (\\.\DISPLAY2):
+[2024-12-07 10:13:04.450]   Bounds: {X=0,Y=0,Width=1920,Height=1080} (Absoluto)
+[2024-12-07 10:13:04.450]   Working Area: {X=0,Y=34,Width=1920,Height=1046}
+[2024-12-07 10:13:04.451]   Primary: True
+[2024-12-07 10:13:04.452]   BitsPerPixel: 32
+[2024-12-07 10:13:04.453] === Detalhes dos Screens ===
+[2024-12-07 10:13:04.454] Screen: \\.\DISPLAY1 Config: \\.\DISPLAY2
+[2024-12-07 10:13:04.454] Screen: \\.\DISPLAY2 Config: \\.\DISPLAY2
+[2024-12-07 10:13:04.455] ===========================
+[2024-12-07 10:13:04.456] Usando monitor: \\.\DISPLAY2
+[2024-12-07 10:13:04.457] Tentando posicionar em - X:70, Y:-5
+[2024-12-07 10:13:04.492] Posição final: X=70, Y=-5 em \\.\DISPLAY2
+[2024-12-07 10:13:06.964] WinEventProc - Mudança de foco para: app.manifest - MyTaskBar - Cursor
+[2024-12-07 10:13:06.967] UpdateActiveWindow - Nova janela ativa: app.manifest - MyTaskBar - Cursor
+[2024-12-07 10:13:08.210] WinEventProc - Mudança de foco para: PowerShell
+[2024-12-07 10:13:08.211] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 10:13:08.802] WinEventProc - Mudança de foco para: app.manifest - MyTaskBar - Cursor
+[2024-12-07 10:13:08.802] UpdateActiveWindow - Nova janela ativa: app.manifest - MyTaskBar - Cursor
+[2024-12-07 10:13:11.509] WinEventProc - Mudança de foco para: app.manifest - MyTaskBar - Cursor
+[2024-12-07 10:13:11.511] UpdateActiveWindow - Nova janela ativa: app.manifest - MyTaskBar - Cursor
+[2024-12-07 10:16:56.000] Total de monitores: 2
+[2024-12-07 10:16:56.018] Monitor 1 (\\.\DISPLAY1):
+[2024-12-07 10:16:56.020]   Bounds: {X=-1080,Y=-383,Width=1080,Height=1920} (Absoluto)
+[2024-12-07 10:16:56.021]   Working Area: {X=-1080,Y=-383,Width=1080,Height=1920}
+[2024-12-07 10:16:56.022]   Primary: False
+[2024-12-07 10:16:56.023]   BitsPerPixel: 32
+[2024-12-07 10:16:56.024] Monitor 2 (\\.\DISPLAY2):
+[2024-12-07 10:16:56.025]   Bounds: {X=0,Y=0,Width=1920,Height=1080} (Absoluto)
+[2024-12-07 10:16:56.025]   Working Area: {X=0,Y=34,Width=1920,Height=1046}
+[2024-12-07 10:16:56.026]   Primary: True
+[2024-12-07 10:16:56.027]   BitsPerPixel: 32
+[2024-12-07 10:16:56.028] === Detalhes dos Screens ===
+[2024-12-07 10:16:56.029] Screen: \\.\DISPLAY1 Config: \\.\DISPLAY2
+[2024-12-07 10:16:56.030] Screen: \\.\DISPLAY2 Config: \\.\DISPLAY2
+[2024-12-07 10:16:56.030] ===========================
+[2024-12-07 10:16:56.031] Usando monitor: \\.\DISPLAY2
+[2024-12-07 10:16:56.032] Tentando posicionar em - X:70, Y:-5
+[2024-12-07 10:16:56.064] Posição final: X=70, Y=-5 em \\.\DISPLAY2
+[2024-12-07 10:16:58.846] WinEventProc - Mudança de foco para: PowerShell
+[2024-12-07 10:16:58.849] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 10:17:02.076] Total de monitores: 2
+[2024-12-07 10:17:02.094] Monitor 1 (\\.\DISPLAY1):
+[2024-12-07 10:17:02.097]   Bounds: {X=-1080,Y=-383,Width=1080,Height=1920} (Absoluto)
+[2024-12-07 10:17:02.098]   Working Area: {X=-1080,Y=-383,Width=1080,Height=1920}
+[2024-12-07 10:17:02.099]   Primary: False
+[2024-12-07 10:17:02.100]   BitsPerPixel: 32
+[2024-12-07 10:17:02.101] Monitor 2 (\\.\DISPLAY2):
+[2024-12-07 10:17:02.101]   Bounds: {X=0,Y=0,Width=1920,Height=1080} (Absoluto)
+[2024-12-07 10:17:02.102]   Working Area: {X=0,Y=34,Width=1920,Height=1046}
+[2024-12-07 10:17:02.103]   Primary: True
+[2024-12-07 10:17:02.104]   BitsPerPixel: 32
+[2024-12-07 10:17:02.105] === Detalhes dos Screens ===
+[2024-12-07 10:17:02.106] Screen: \\.\DISPLAY1 Config: \\.\DISPLAY2
+[2024-12-07 10:17:02.106] Screen: \\.\DISPLAY2 Config: \\.\DISPLAY2
+[2024-12-07 10:17:02.107] ===========================
+[2024-12-07 10:17:02.108] Usando monitor: \\.\DISPLAY2
+[2024-12-07 10:17:02.109] Tentando posicionar em - X:70, Y:-5
+[2024-12-07 10:17:02.143] Posição final: X=70, Y=-5 em \\.\DISPLAY2
+[2024-12-07 10:17:02.829] WinEventProc - Mudança de foco para: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 10:17:02.830] UpdateActiveWindow - Nova janela ativa: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 10:17:08.062] WinEventProc - Mudança de foco para: PowerShell
+[2024-12-07 10:17:08.063] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 10:17:08.684] WinEventProc - Mudança de foco para: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 10:17:08.685] UpdateActiveWindow - Nova janela ativa: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 10:17:11.520] WinEventProc - Mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder13\Folder13.ini
+[2024-12-07 10:17:12.503] WinEventProc - Mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder01\Folder01.ini
+[2024-12-07 10:17:14.386] WinEventProc - Mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder13\Folder13.ini
+[2024-12-07 10:17:14.387] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder13\Folder13.ini
+[2024-12-07 10:17:14.563] WinEventProc - Mudança de foco para: Everything
+[2024-12-07 10:17:14.564] UpdateActiveWindow - Nova janela ativa: Everything
+[2024-12-07 10:17:14.566] WinEventProc - Nova janela detectada: Everything
+[2024-12-07 10:17:15.845] WinEventProc - Mudança de foco para: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 10:17:15.845] UpdateActiveWindow - Nova janela ativa: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 10:17:16.607] WinEventProc - Mudança de foco para: PowerShell
+[2024-12-07 10:17:16.608] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 10:17:18.172] WinEventProc - Mudança de foco para: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 10:17:18.174] UpdateActiveWindow - Nova janela ativa: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 10:17:20.321] WinEventProc - Mudança de foco para: PowerShell
+[2024-12-07 10:17:20.325] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 10:17:21.069] WinEventProc - Mudança de foco para: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 10:17:21.070] UpdateActiveWindow - Nova janela ativa: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 10:17:33.909] WinEventProc - Mudança de foco para: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 10:17:33.910] UpdateActiveWindow - Nova janela ativa: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 10:18:07.909] Total de monitores: 2
+[2024-12-07 10:18:07.928] Monitor 1 (\\.\DISPLAY1):
+[2024-12-07 10:18:07.929]   Bounds: {X=-1080,Y=-383,Width=1080,Height=1920} (Absoluto)
+[2024-12-07 10:18:07.930]   Working Area: {X=-1080,Y=-383,Width=1080,Height=1920}
+[2024-12-07 10:18:07.931]   Primary: False
+[2024-12-07 10:18:07.932]   BitsPerPixel: 32
+[2024-12-07 10:18:07.933] Monitor 2 (\\.\DISPLAY2):
+[2024-12-07 10:18:07.933]   Bounds: {X=0,Y=0,Width=1920,Height=1080} (Absoluto)
+[2024-12-07 10:18:07.934]   Working Area: {X=0,Y=34,Width=1920,Height=1046}
+[2024-12-07 10:18:07.935]   Primary: True
+[2024-12-07 10:18:07.936]   BitsPerPixel: 32
+[2024-12-07 10:18:07.937] === Detalhes dos Screens ===
+[2024-12-07 10:18:07.938] Screen: \\.\DISPLAY1 Config: \\.\DISPLAY2
+[2024-12-07 10:18:07.939] Screen: \\.\DISPLAY2 Config: \\.\DISPLAY2
+[2024-12-07 10:18:07.939] ===========================
+[2024-12-07 10:18:07.940] Usando monitor: \\.\DISPLAY2
+[2024-12-07 10:18:07.941] Tentando posicionar em - X:70, Y:-5
+[2024-12-07 10:18:07.979] Posição final: X=70, Y=-5 em \\.\DISPLAY2
+[2024-12-07 10:18:12.027] WinEventProc - Mudança de foco para: NativeMethods.cs - MyTaskBar - Cursor
+[2024-12-07 10:18:12.028] UpdateActiveWindow - Nova janela ativa: NativeMethods.cs - MyTaskBar - Cursor
+[2024-12-07 10:19:45.290] Total de monitores: 2
+[2024-12-07 10:19:45.309] Monitor 1 (\\.\DISPLAY1):
+[2024-12-07 10:19:45.310]   Bounds: {X=-1080,Y=-383,Width=1080,Height=1920} (Absoluto)
+[2024-12-07 10:19:45.311]   Working Area: {X=-1080,Y=-383,Width=1080,Height=1920}
+[2024-12-07 10:19:45.312]   Primary: False
+[2024-12-07 10:19:45.313]   BitsPerPixel: 32
+[2024-12-07 10:19:45.314] Monitor 2 (\\.\DISPLAY2):
+[2024-12-07 10:19:45.315]   Bounds: {X=0,Y=0,Width=1920,Height=1080} (Absoluto)
+[2024-12-07 10:19:45.316]   Working Area: {X=0,Y=34,Width=1920,Height=1046}
+[2024-12-07 10:19:45.317]   Primary: True
+[2024-12-07 10:19:45.318]   BitsPerPixel: 32
+[2024-12-07 10:19:45.319] === Detalhes dos Screens ===
+[2024-12-07 10:19:45.319] Screen: \\.\DISPLAY1 Config: \\.\DISPLAY2
+[2024-12-07 10:19:45.320] Screen: \\.\DISPLAY2 Config: \\.\DISPLAY2
+[2024-12-07 10:19:45.321] ===========================
+[2024-12-07 10:19:45.321] Usando monitor: \\.\DISPLAY2
+[2024-12-07 10:19:45.322] Tentando posicionar em - X:70, Y:-5
+[2024-12-07 10:19:45.355] Posição final: X=70, Y=-5 em \\.\DISPLAY2
+[2024-12-07 10:19:50.098] WinEventProc - Mudança de foco para: WindowManager.cs - MyTaskBar - Cursor
+[2024-12-07 10:19:50.099] UpdateActiveWindow - Nova janela ativa: WindowManager.cs - MyTaskBar - Cursor
+[2024-12-07 10:20:04.511] WinEventProc - Mudança de foco para: Cursor
+[2024-12-07 10:20:05.847] WinEventProc - Mudança de foco para: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 10:20:05.847] UpdateActiveWindow - Nova janela ativa: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 10:22:14.383] WinEventProc - Nova janela detectada: Chrome Legacy Window
+[2024-12-07 10:28:11.071] Total de monitores: 2
+[2024-12-07 10:28:11.095] Monitor 1 (\\.\DISPLAY1):
+[2024-12-07 10:28:11.097]   Bounds: {X=-1080,Y=-383,Width=1080,Height=1920} (Absoluto)
+[2024-12-07 10:28:11.098]   Working Area: {X=-1080,Y=-383,Width=1080,Height=1920}
+[2024-12-07 10:28:11.099]   Primary: False
+[2024-12-07 10:28:11.101]   BitsPerPixel: 32
+[2024-12-07 10:28:11.102] Monitor 2 (\\.\DISPLAY2):
+[2024-12-07 10:28:11.103]   Bounds: {X=0,Y=0,Width=1920,Height=1080} (Absoluto)
+[2024-12-07 10:28:11.103]   Working Area: {X=0,Y=34,Width=1920,Height=1046}
+[2024-12-07 10:28:11.104]   Primary: True
+[2024-12-07 10:28:11.105]   BitsPerPixel: 32
+[2024-12-07 10:28:11.107] === Detalhes dos Screens ===
+[2024-12-07 10:28:11.108] Screen: \\.\DISPLAY1 Config: \\.\DISPLAY2
+[2024-12-07 10:28:11.109] Screen: \\.\DISPLAY2 Config: \\.\DISPLAY2
+[2024-12-07 10:28:11.110] ===========================
+[2024-12-07 10:28:11.112] Usando monitor: \\.\DISPLAY2
+[2024-12-07 10:28:11.113] Tentando posicionar em - X:70, Y:-5
+[2024-12-07 10:28:11.143] Posição final: X=70, Y=-5 em \\.\DISPLAY2
+[2024-12-07 10:28:14.780] Total de monitores: 2
+[2024-12-07 10:28:14.798] Monitor 1 (\\.\DISPLAY1):
+[2024-12-07 10:28:14.799]   Bounds: {X=-1080,Y=-383,Width=1080,Height=1920} (Absoluto)
+[2024-12-07 10:28:14.800]   Working Area: {X=-1080,Y=-383,Width=1080,Height=1920}
+[2024-12-07 10:28:14.801]   Primary: False
+[2024-12-07 10:28:14.802]   BitsPerPixel: 32
+[2024-12-07 10:28:14.802] Monitor 2 (\\.\DISPLAY2):
+[2024-12-07 10:28:14.803]   Bounds: {X=0,Y=0,Width=1920,Height=1080} (Absoluto)
+[2024-12-07 10:28:14.803]   Working Area: {X=0,Y=34,Width=1920,Height=1046}
+[2024-12-07 10:28:14.804]   Primary: True
+[2024-12-07 10:28:14.805]   BitsPerPixel: 32
+[2024-12-07 10:28:14.807] === Detalhes dos Screens ===
+[2024-12-07 10:28:14.807] Screen: \\.\DISPLAY1 Config: \\.\DISPLAY2
+[2024-12-07 10:28:14.808] Screen: \\.\DISPLAY2 Config: \\.\DISPLAY2
+[2024-12-07 10:28:14.809] ===========================
+[2024-12-07 10:28:14.810] Usando monitor: \\.\DISPLAY2
+[2024-12-07 10:28:14.810] Tentando posicionar em - X:70, Y:-5
+[2024-12-07 10:28:14.846] Posição final: X=70, Y=-5 em \\.\DISPLAY2
+[2024-12-07 10:28:16.744] WinEventProc - Mudança de foco para: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 10:28:16.748] UpdateActiveWindow - Nova janela ativa: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 10:28:18.122] WinEventProc - Mudança de foco para: Everything
+[2024-12-07 10:28:18.123] UpdateActiveWindow - Nova janela ativa: Everything
+[2024-12-07 10:28:28.423] WinEventProc - Mudança de foco para: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 10:28:28.423] UpdateActiveWindow - Nova janela ativa: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 10:28:41.394] WinEventProc - Mudança de foco para: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 10:28:41.394] UpdateActiveWindow - Nova janela ativa: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 10:32:40.875] Total de monitores: 2
+[2024-12-07 10:32:40.893] Monitor 1 (\\.\DISPLAY1):
+[2024-12-07 10:32:40.895]   Bounds: {X=-1080,Y=-383,Width=1080,Height=1920} (Absoluto)
+[2024-12-07 10:32:40.896]   Working Area: {X=-1080,Y=-383,Width=1080,Height=1920}
+[2024-12-07 10:32:40.897]   Primary: False
+[2024-12-07 10:32:40.898]   BitsPerPixel: 32
+[2024-12-07 10:32:40.899] Monitor 2 (\\.\DISPLAY2):
+[2024-12-07 10:32:40.899]   Bounds: {X=0,Y=0,Width=1920,Height=1080} (Absoluto)
+[2024-12-07 10:32:40.900]   Working Area: {X=0,Y=34,Width=1920,Height=1046}
+[2024-12-07 10:32:40.901]   Primary: True
+[2024-12-07 10:32:40.902]   BitsPerPixel: 32
+[2024-12-07 10:32:40.903] === Detalhes dos Screens ===
+[2024-12-07 10:32:40.904] Screen: \\.\DISPLAY1 Config: \\.\DISPLAY2
+[2024-12-07 10:32:40.905] Screen: \\.\DISPLAY2 Config: \\.\DISPLAY2
+[2024-12-07 10:32:40.906] ===========================
+[2024-12-07 10:32:40.907] Usando monitor: \\.\DISPLAY2
+[2024-12-07 10:32:40.907] Tentando posicionar em - X:70, Y:-5
+[2024-12-07 10:32:40.942] Posição final: X=70, Y=-5 em \\.\DISPLAY2
+[2024-12-07 10:32:51.995] WinEventProc - Mudança de foco para: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 10:32:51.997] UpdateActiveWindow - Nova janela ativa: TaskButton.cs - MyTaskBar - Cursor
+[2024-12-07 10:33:33.020] WinEventProc - Mudança de foco para: PowerShell
+[2024-12-07 10:33:33.021] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 10:33:36.502] Total de monitores: 2
+[2024-12-07 10:33:36.521] Monitor 1 (\\.\DISPLAY1):
+[2024-12-07 10:33:36.522]   Bounds: {X=-1080,Y=-383,Width=1080,Height=1920} (Absoluto)
+[2024-12-07 10:33:36.523]   Working Area: {X=-1080,Y=-383,Width=1080,Height=1920}
+[2024-12-07 10:33:36.524]   Primary: False
+[2024-12-07 10:33:36.525]   BitsPerPixel: 32
+[2024-12-07 10:33:36.526] Monitor 2 (\\.\DISPLAY2):
+[2024-12-07 10:33:36.526]   Bounds: {X=0,Y=0,Width=1920,Height=1080} (Absoluto)
+[2024-12-07 10:33:36.527]   Working Area: {X=0,Y=34,Width=1920,Height=1046}
+[2024-12-07 10:33:36.527]   Primary: True
+[2024-12-07 10:33:36.528]   BitsPerPixel: 32
+[2024-12-07 10:33:36.529] === Detalhes dos Screens ===
+[2024-12-07 10:33:36.530] Screen: \\.\DISPLAY1 Config: \\.\DISPLAY2
+[2024-12-07 10:33:36.531] Screen: \\.\DISPLAY2 Config: \\.\DISPLAY2
+[2024-12-07 10:33:36.532] ===========================
+[2024-12-07 10:33:36.533] Usando monitor: \\.\DISPLAY2
+[2024-12-07 10:33:36.534] Tentando posicionar em - X:70, Y:-5
+[2024-12-07 10:33:36.567] Posição final: X=70, Y=-5 em \\.\DISPLAY2
+[2024-12-07 10:33:55.814] WinEventProc - Mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\DropdownBar\DropdownBar.ini
+[2024-12-07 10:33:55.815] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\DropdownBar\DropdownBar.ini
+[2024-12-07 10:33:59.065] WinEventProc - Mudança de foco para: Configurações
+[2024-12-07 10:33:59.066] UpdateActiveWindow - Nova janela ativa: Configurações
+[2024-12-07 10:33:59.157] WinEventProc - Janela fechada/ocultada: Configurações
+[2024-12-07 10:33:59.201] WinEventProc - Nova janela detectada: Configurações
+[2024-12-07 10:34:01.080] WinEventProc - Nova janela detectada: Configurações
+[2024-12-07 10:34:01.177] WinEventProc - Janela fechada/ocultada: Configurações
+[2024-12-07 10:34:01.305] WinEventProc - Janela fechada/ocultada: Configurações
+[2024-12-07 10:34:06.272] WinEventProc - Mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\DropdownBar\DropdownBar.ini
+[2024-12-07 10:34:06.273] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\DropdownBar\DropdownBar.ini
+[2024-12-07 10:34:18.584] WinEventProc - Mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\DropdownBar\DropdownBar.ini
+[2024-12-07 10:34:18.585] UpdateActiveWindow - Nova janela ativa: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\DropdownBar\DropdownBar.ini
+[2024-12-07 10:34:18.820] WinEventProc - Mudança de foco para: C:\Users\João Henrique\Documents\Rainmeter\Skins\Droptop\DropdownBar\Other\ContextBox\ContextBox1.ini
+[2024-12-07 10:34:24.846] WinEventProc - Mudança de foco para: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 10:34:24.846] UpdateActiveWindow - Nova janela ativa: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 10:34:25.528] WinEventProc - Mudança de foco para: PowerShell
+[2024-12-07 10:34:25.528] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 10:34:26.272] WinEventProc - Mudança de foco para: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 10:34:26.273] UpdateActiveWindow - Nova janela ativa: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 10:34:28.159] WinEventProc - Mudança de foco para: PowerShell
+[2024-12-07 10:34:28.162] UpdateActiveWindow - Nova janela ativa: PowerShell
+[2024-12-07 10:34:31.379] Total de monitores: 2
+[2024-12-07 10:34:31.398] Monitor 1 (\\.\DISPLAY1):
+[2024-12-07 10:34:31.399]   Bounds: {X=-1080,Y=-383,Width=1080,Height=1920} (Absoluto)
+[2024-12-07 10:34:31.399]   Working Area: {X=-1080,Y=-383,Width=1080,Height=1920}
+[2024-12-07 10:34:31.400]   Primary: False
+[2024-12-07 10:34:31.400]   BitsPerPixel: 32
+[2024-12-07 10:34:31.401] Monitor 2 (\\.\DISPLAY2):
+[2024-12-07 10:34:31.402]   Bounds: {X=0,Y=0,Width=1920,Height=1080} (Absoluto)
+[2024-12-07 10:34:31.402]   Working Area: {X=0,Y=34,Width=1920,Height=1046}
+[2024-12-07 10:34:31.403]   Primary: True
+[2024-12-07 10:34:31.404]   BitsPerPixel: 32
+[2024-12-07 10:34:31.405] === Detalhes dos Screens ===
+[2024-12-07 10:34:31.406] Screen: \\.\DISPLAY1 Config: \\.\DISPLAY2
+[2024-12-07 10:34:31.407] Screen: \\.\DISPLAY2 Config: \\.\DISPLAY2
+[2024-12-07 10:34:31.407] ===========================
+[2024-12-07 10:34:31.408] Usando monitor: \\.\DISPLAY2
+[2024-12-07 10:34:31.409] Tentando posicionar em - X:70, Y:-5
+[2024-12-07 10:34:31.441] Posição final: X=70, Y=-5 em \\.\DISPLAY2
+[2024-12-07 10:34:36.808] WinEventProc - Mudança de foco para: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 10:34:36.809] UpdateActiveWindow - Nova janela ativa: MyTaskBar.cs - MyTaskBar - Cursor
+[2024-12-07 10:34:55.807] WinEventProc - Mudança de foco para: config.json - MyTaskBar - Cursor
+[2024-12-07 10:34:55.808] UpdateActiveWindow - Nova janela ativa: config.json - MyTaskBar - Cursor
+[2024-12-07 10:35:21.095] WinEventProc - Mudança de foco para: Cursor
+[2024-12-07 10:35:22.207] WinEventProc - Mudança de foco para: config.json - MyTaskBar - Cursor
+[2024-12-07 10:35:22.208] UpdateActiveWindow - Nova janela ativa: config.json - MyTaskBar - Cursor

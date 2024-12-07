@@ -1,12 +1,5 @@
 {
-  "IgnoredApps": [
-    "C:\\Users\\João Henrique\\Documents\\Rainmeter\\Skins\\Droptop\\DropdownBar\\DropdownBar.ini",
-    "C:\\Users\\João Henrique\\Documents\\Rainmeter\\Skins\\Droptop\\Other\\BackgroundProcesses\\BackgroundProcesses.ini",
-    "C:\\Users\\João Henrique\\Documents\\Rainmeter\\Skins\\Droptop\\DropdownBar\\AppBar\\AppBar.ini",
-    "C:\\Users\\João Henrique\\Documents\\Rainmeter\\Skins\\Droptop\\Other\\BlackCorners\\BlackCorners.ini",
-    "NVIDIA GeForce Overlay",
-    "Configurações"
-  ],
+  "IgnoredApps": [],
   "WindowPosition": {
     "MonitorDevice": "\\\\.\\DISPLAY2",
     "X": 70,

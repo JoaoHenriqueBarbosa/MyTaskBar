@@ -1,34 +1,35 @@
-using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Drawing;
-using System.IO;
+namespace MyTaskBar;
+
 using System.Runtime.InteropServices;
 using System.Text;
-using System.Windows.Forms;
 using Timer = System.Windows.Forms.Timer;
 using System.Diagnostics;
+using MyTaskBar.Components;
+using MyTaskBar.Native;
 
 /// <summary>
 /// Representa a janela principal do aplicativo de gerenciamento de janelas.
 /// Fornece uma interface minimalista para visualizar e gerenciar janelas ativas no Windows.
 /// </summary>
-public class MainWindow : Form
+public partial class MainWindow : Form
 {
-    private FlowLayoutPanel layout;
-    private Timer updateTimer;
-    private HashSet<IntPtr> windowsCache = new HashSet<IntPtr>();
-    private Dictionary<Button, IntPtr> windowHandles = new Dictionary<Button, IntPtr>();
-    private IntPtr activeWindow = IntPtr.Zero;
-    private AppConfig config;
-    private Dictionary<Button, string> executablePaths = new();
+    private readonly FlowLayoutPanel layout;
+    private readonly Timer updateTimer;
+    private readonly AppConfig config;
+    private readonly Dictionary<IntPtr, TaskWindowState> windowStates = new();
+    private readonly object stateLock = new();
 #if !RELEASE
     private static readonly string LogFile = "taskbar.log";
 #endif
     private bool isInitializing = true;
+    private IntPtr taskbarHwnd;
+
+    // Delegate e handler para controle do console
+    private delegate bool ConsoleEventHandler(CtrlType sig);
+    private static readonly ConsoleEventHandler _handler = Handler;
 
     [DllImport("Kernel32")]
-    private static extern bool SetConsoleCtrlHandler(EventHandler handler, bool add);
+    private static extern bool SetConsoleCtrlHandler(ConsoleEventHandler handler, bool add);
 
     [DllImport("user32.dll")]
     private static extern uint GetWindowThreadProcessId(IntPtr hWnd, out int processId);
@@ -43,9 +44,6 @@ public class MainWindow : Form
         int nHeightEllipse
     );
 
-    private delegate bool EventHandler(CtrlType sig);
-    private static EventHandler _handler = new EventHandler(Handler);
-
     enum CtrlType
     {
         CTRL_C_EVENT = 0,
@@ -57,7 +55,6 @@ public class MainWindow : Form
 
     private static bool Handler(CtrlType sig)
     {
-        // Cleanup antes de fechar
         Application.Exit();
         return true;
     }
@@ -76,74 +73,6 @@ public class MainWindow : Form
         public IntPtr lParam;
     }
 
-    private const int ABM_SETSTATE = 0x0000000A;
-    private const int ABS_AUTOHIDE = 0x0000001;
-    private const int ABS_ALWAYSONTOP = 0x0000002;
-
-    private void DisableTaskbarAutoHide()
-    {
-        try
-        {
-            APPBARDATA abd = new APPBARDATA();
-            abd.cbSize = Marshal.SizeOf(abd);
-            abd.lParam = IntPtr.Zero;  // Remove todas as flags
-
-            SHAppBarMessage(ABM_SETSTATE, ref abd);
-        }
-        catch (Exception ex)
-        {
-            LogDebug($"Erro ao desativar autohide da taskbar: {ex.Message}");
-        }
-    }
-
-    private void EnableTaskbarAutoHide()
-    {
-        try
-        {
-            APPBARDATA abd = new APPBARDATA();
-            abd.cbSize = Marshal.SizeOf(abd);
-            abd.lParam = (IntPtr)(ABS_AUTOHIDE | ABS_ALWAYSONTOP);  // Restaura as flags originais
-
-            SHAppBarMessage(ABM_SETSTATE, ref abd);
-        }
-        catch (Exception ex)
-        {
-            LogDebug($"Erro ao restaurar autohide da taskbar: {ex.Message}");
-        }
-    }
-
-    private void ForceTaskbarHide()
-    {
-        try
-        {
-            APPBARDATA abd = new APPBARDATA();
-            abd.cbSize = Marshal.SizeOf(abd);
-            abd.lParam = (IntPtr)ABS_AUTOHIDE;  // Força o modo autohide
-
-            SHAppBarMessage(ABM_SETSTATE, ref abd);
-        }
-        catch (Exception ex)
-        {
-            LogDebug($"Erro ao forçar hide da taskbar: {ex.Message}");
-        }
-    }
-
-    private void RestoreTaskbarState()
-    {
-        try
-        {
-            APPBARDATA abd = new APPBARDATA();
-            abd.cbSize = Marshal.SizeOf(abd);
-            abd.lParam = (IntPtr)(ABS_ALWAYSONTOP);  // Restaura apenas AlwaysOnTop sem autohide
-
-            SHAppBarMessage(ABM_SETSTATE, ref abd);
-        }
-        catch (Exception ex)
-        {
-            LogDebug($"Erro ao restaurar estado da taskbar: {ex.Message}");
-        }
-    }
-
     [DllImport("user32.dll")]
     private static extern IntPtr FindWindow(string lpClassName, string lpWindowName);
 
@@ -153,118 +82,117 @@ public class MainWindow : Form
     private const int SW_HIDE = 0;
     private const int SW_SHOW = 5;
 
-    private IntPtr taskbarHwnd;
+    [DllImport("kernel32.dll")]
+    private static extern IntPtr OpenProcess(int dwDesiredAccess, bool bInheritHandle, int dwProcessId);
 
-    private void HideSystemTaskbar()
+    [DllImport("psapi.dll")]
+    private static extern uint GetModuleFileNameEx(IntPtr hProcess, IntPtr hModule, 
+        [Out] StringBuilder lpBaseName, uint nSize);
+
+    [DllImport("kernel32.dll")]
+    private static extern bool CloseHandle(IntPtr handle);
+
+    // Lista de processos protegidos (jogos com anti-cheat conhecidos)
+    private static readonly HashSet<string> ProtectedProcesses = new()
+    {
+        "valorant.exe",
+        "valorant-win64-shipping.exe",
+        "csgo.exe",
+        "cs2.exe",
+        "easyanticheat.exe",
+        "battleye.exe",
+        "pubg.exe",
+        "tslgame.exe",
+        "r5apex.exe",        // Apex Legends
+        "fortnite.exe",
+        "overwatch.exe",
+        "destiny2.exe",
+        "riotclient.exe",
+        "leagueclient.exe",
+        "league of legends.exe",
+        "faceitclient.exe",
+        "esportal.exe"
+    };
+
+    private static bool IsProtectedProcess(IntPtr hwnd)
     {
         try
         {
-            // Encontra a janela da taskbar
-            taskbarHwnd = FindWindow("Shell_TrayWnd", string.Empty);
-            if (taskbarHwnd != IntPtr.Zero)
-            {
-                // Esconde completamente
-                SetWindowVisibility(taskbarHwnd, SW_HIDE);
-            }
+            GetWindowThreadProcessId(hwnd, out int processId);
+            using var process = Process.GetProcessById(processId);
+            return ProtectedProcesses.Contains(process.ProcessName.ToLower());
         }
         catch (Exception ex)
         {
-            LogDebug($"Erro ao esconder taskbar: {ex.Message}");
+            Debug.WriteLine($"Erro ao verificar processo protegido: {ex.Message}");
+            return false;
         }
     }
-
-    private void RestoreSystemTaskbar()
-    {
-        try
-        {
-            if (taskbarHwnd != IntPtr.Zero)
-            {
-                SetWindowVisibility(taskbarHwnd, SW_SHOW);
-            }
-        }
-        catch (Exception ex)
-        {
-            LogDebug($"Erro ao restaurar taskbar: {ex.Message}");
-        }
-    }
-
-    private const int WH_SHELL = 10;
-    private const int HSHELL_WINDOWACTIVATED = 4;
-    private const int HSHELL_RUDEAPPACTIVATED = 32772;
-    private const uint WINEVENT_OUTOFCONTEXT = 0;
-    private const uint EVENT_SYSTEM_FOREGROUND = 3;
-
-    private delegate void WinEventDelegate(IntPtr hWinEventHook, uint eventType, IntPtr hwnd,
-        int idObject, int idChild, uint dwEventThread, uint dwmsEventTime);
-
-    [DllImport("user32.dll")]
-    private static extern IntPtr SetWinEventHook(uint eventMin, uint eventMax, IntPtr hmodWinEventProc,
-        WinEventDelegate lpfnWinEventProc, uint idProcess, uint idThread, uint dwFlags);
-
-    private WinEventDelegate? shellProcDelegate;
-    private IntPtr hookHandle = IntPtr.Zero;
 
     public MainWindow()
     {
         SetConsoleCtrlHandler(_handler, true);
         isInitializing = true;
         config = AppConfig.Load();
-        LogMonitorInfo();
-        InitializeWindow();
-        RestoreWindowPosition();
-
-        // Configuração da Janela
-        this.FormBorderStyle = FormBorderStyle.None;
-        this.TopMost = true;
-        this.BackColor = Color.Black;
-        this.TransparencyKey = Color.Black;
-        this.Opacity = 0.8;
-        this.AutoSize = true;
-        this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-
-        layout = new FlowLayoutPanel
+        
+        // Inicializa os componentes principais
+        layout = new()
         {
             Dock = DockStyle.Fill,
             AutoSize = true,
             AutoSizeMode = AutoSizeMode.GrowAndShrink,
-            Padding = new Padding(5),
+            Padding = new(5),
             BackColor = Color.Transparent,
             FlowDirection = FlowDirection.LeftToRight,
             WrapContents = false
         };
-        this.Controls.Add(layout);
 
-        // Registra o hook de eventos do Windows
-        shellProcDelegate = new WinEventDelegate(WinEventProc);
-        hookHandle = SetWinEventHook(EVENT_SYSTEM_FOREGROUND, EVENT_SYSTEM_FOREGROUND,
-            IntPtr.Zero, shellProcDelegate, 0, 0, WINEVENT_OUTOFCONTEXT);
+        updateTimer = new() { Interval = 5000 };
 
-        // Atualiza a lista de janelas a cada 5 segundos
-        updateTimer = new Timer
+        InitializeWindow();
+        ConfigureWindow();
+        SetupEventHandlers();
+        RegisterWindowsHooks();
+
+        this.Visible = false; // Começa invisível
+        
+        // Verifica o estado inicial após um breve delay
+        Timer initialCheck = new() { Interval = 100 };
+        initialCheck.Tick += (s, e) =>
         {
-            Interval = 5000 // 5 segundos
+            this.Visible = !IsAnyFullscreenWindowOnTaskbarMonitor();
+            initialCheck.Dispose();
         };
-        updateTimer.Tick += (s, e) => UpdateWindowsList();
-
-        this.Shown += (s, e) =>
-        {
-            UpdateWindowsList(); // Faz a primeira atualização
-            updateTimer.Start(); // Inicia o timer
-            isInitializing = false;
-            HideSystemTaskbar();  // Esconde completamente a taskbar
-        };
-
-        this.FormClosing += (s, e) =>
-        {
-            RestoreSystemTaskbar();  // Restaura a taskbar ao fechar
-        };
+        initialCheck.Start();
     }
 
-    private void InitializeWindow()
+    private void ConfigureWindow()
     {
-        this.LocationChanged += (s, e) => SaveWindowPosition();
+        FormBorderStyle = FormBorderStyle.None;
+        TopMost = true;
+        BackColor = Color.Black;
+        TransparencyKey = Color.Black;
+        Opacity = 0.8;
+        AutoSize = true;
+        AutoSizeMode = AutoSizeMode.GrowAndShrink;
+        
+        Controls.Add(layout);
+    }
 
-        // Removida a configuração dos botões pois agora usamos o ButtonHelper
+    private void SetupEventHandlers()
+    {
+        updateTimer.Tick += (s, e) => UpdateWindowsList();
+        
+        Shown += (s, e) =>
+        {
+            UpdateWindowsList();
+            updateTimer.Start();
+            isInitializing = false;
+            HideSystemTaskbar();
+        };
+
+        FormClosing += (s, e) => RestoreSystemTaskbar();
+        LocationChanged += (s, e) => SaveWindowPosition();
     }
 
     private const int SWP_NOSIZE = 0x0001;
@@ -362,21 +290,70 @@ public class MainWindow : Form
         public required TaskButton Button { get; set; }
     }
 
-    // Atualizar a referência para o novo nome
-    private Dictionary<IntPtr, TaskWindowState> windowStates = new();
-    private readonly object stateLock = new object();
+    private Dictionary<Button, IntPtr> windowHandles = new();
+    private IntPtr activeWindow = IntPtr.Zero;
+    private Dictionary<Button, string> executablePaths = new();
 
-    /// <summary>
-    /// Atualiza a lista de janelas e seus estados.
-    /// Verifica mudanças a cada intervalo definido.
-    /// </summary>
+    [DllImport("user32.dll")]
+    private static extern IntPtr SetWinEventHook(uint eventMin, uint eventMax, IntPtr hmodWinEventProc,
+        WinEventDelegate lpfnWinEventProc, uint idProcess, uint idThread, uint dwFlags);
+
+    private WinEventDelegate? shellProcDelegate;
+    private IntPtr hookHandle = IntPtr.Zero;
+
+    private void HideSystemTaskbar()
+    {
+        try
+        {
+            // Encontra a janela da taskbar
+            taskbarHwnd = FindWindow("Shell_TrayWnd", string.Empty);
+            if (taskbarHwnd != IntPtr.Zero)
+            {
+                // Esconde completamente
+                SetWindowVisibility(taskbarHwnd, SW_HIDE);
+            }
+        }
+        catch (Exception ex)
+        {
+            LogDebug($"Erro ao esconder taskbar: {ex.Message}");
+        }
+    }
+
+    private void RestoreSystemTaskbar()
+    {
+        try
+        {
+            if (taskbarHwnd != IntPtr.Zero)
+            {
+                SetWindowVisibility(taskbarHwnd, SW_SHOW);
+            }
+        }
+        catch (Exception ex)
+        {
+            LogDebug($"Erro ao restaurar taskbar: {ex.Message}");
+        }
+    }
+
+    private const uint WINEVENT_OUTOFCONTEXT = 0;
+    private const uint EVENT_SYSTEM_FOREGROUND = 3;
+    private const uint EVENT_OBJECT_CREATE = 0x8000;
+    private const uint EVENT_OBJECT_DESTROY = 0x8001;
+    private const uint EVENT_OBJECT_SHOW = 0x8002;
+    private const uint EVENT_OBJECT_HIDE = 0x8003;
+    private const uint EVENT_OBJECT_LOCATIONCHANGE = 0x800B;
+    private const uint EVENT_OBJECT_STATECHANGE = 0x800A;
+
+    private delegate void WinEventDelegate(IntPtr hWinEventHook, uint eventType, IntPtr hwnd,
+        int idObject, int idChild, uint dwEventThread, uint dwmsEventTime);
+
     private void UpdateWindowsList()
     {
         var currentWindows = GetAltTabWindows();
         var foregroundWindow = GetForegroundWindow();
         bool needsLayout = false;
 
-        lock (stateLock)
+        Monitor.Enter(stateLock);
+        try
         {
             // Remove janelas fechadas
             var closedWindows = windowStates.Keys
@@ -435,6 +412,10 @@ public class MainWindow : Form
                 }
             }
         }
+        finally
+        {
+            Monitor.Exit(stateLock);
+        }
 
         if (needsLayout)
         {
@@ -451,101 +432,101 @@ public class MainWindow : Form
     {
         var btn = new TaskButton(exePath, title);
 
-        btn.MouseDown += (s, e) =>
+        btn.IgnoreAppRequested += (s, appTitle) =>
         {
-            if (e.Button == MouseButtons.Middle)
+            if (!config.IgnoredApps.Contains(appTitle))
             {
-                if (!config.IgnoredApps.Contains(title))
-                {
-                    config.IgnoredApps.Add(title);
-                    config.Save();
+                config.IgnoredApps.Add(appTitle);
+                config.Save();
 
-                    if (windowStates.TryGetValue(handle, out var state))
-                    {
-                        layout.Controls.Remove(state.Button);
-                        state.Button.Dispose();
-                        windowStates.Remove(handle);
-                        this.PerformLayout();
-                    }
+                if (windowStates.TryGetValue(handle, out var state))
+                {
+                    layout.Controls.Remove(state.Button);
+                    state.Button.Dispose();
+                    windowStates.Remove(handle);
+                    this.PerformLayout();
                 }
             }
         };
 
-        btn.Click += (s, e) => FocusWindow(handle);
+        btn.RestoreAppRequested += (s, appTitle) =>
+        {
+            if (config.IgnoredApps.Contains(appTitle))
+            {
+                config.IgnoredApps.Remove(appTitle);
+                config.Save();
+                UpdateWindowsList(); // Atualiza a lista para mostrar o app restaurado
+            }
+        };
+
+        btn.GetIgnoredApps = (s, e) => config.IgnoredApps;
+
+        btn.MinimizeRequested += (s, e) => MinimizeWindow(handle);
+        btn.ActivateRequested += (s, e) => ActivateWindow(handle);
+
         return btn;
     }
 
-    private void FocusWindow(IntPtr hwnd)
+    private void MinimizeWindow(IntPtr hwnd)
     {
-        bool wasActive = false;
-        TaskWindowState? state = null;
-
-        lock (stateLock)
+        try
         {
-            // Verifica se a janela está ativa usando nosso estado interno
-            if (windowStates.TryGetValue(hwnd, out state) && state != null)
+            if (!ShowWindow(hwnd, SW_MINIMIZE))
             {
-                wasActive = state.IsActive;
-                LogDebug($"Estado interno - IsActive: {wasActive}, Title: {state.Title}");
-            }
-            else
-            {
-                return; // Se não encontrou o estado, não faz nada
-            }
-
-            if (wasActive)
-            {
-                LogDebug("Minimizando janela ativa");
-                // Força minimização
-                ShowWindow(hwnd, SW_MINIMIZE);
-
-                // Desativa o estado visual do botão
-                state.IsActive = false;
-                state.Button.IsActive = false;
-
-                // Não precisamos mais desativar todas as janelas aqui
+                Debug.WriteLine($"Falha ao minimizar janela: {hwnd}");
                 return;
             }
-            else
-            {
-                // Resto da lógica para quando a janela não está ativa...
-                var previousActive = windowStates.Values.FirstOrDefault(w => w.IsActive);
-                if (previousActive != null)
-                {
-                    previousActive.IsActive = false;
-                    previousActive.Button.IsActive = false;
-                }
 
-                state.IsActive = true;
-                state.Button.IsActive = true;
+            if (windowStates.TryGetValue(hwnd, out var state))
+            {
+                state.IsActive = false;
+                state.Button.IsActive = false;
             }
         }
-
-        // Verificar o estado atual da janela
-        WINDOWPLACEMENT placement = new WINDOWPLACEMENT();
-        placement.length = Marshal.SizeOf(placement);
-        GetWindowPlacement(hwnd, ref placement);
-
-        // Se estiver minimizada, restaurar
-        if (placement.showCmd == SW_SHOWMINIMIZED)
+        catch (Exception ex)
         {
-            ShowWindow(hwnd, SW_RESTORE);
-            SetForegroundWindow(hwnd);
-        }
-        // Caso contrário, apenas trazer para frente
-        else
-        {
-            SetForegroundWindow(hwnd);
+            Debug.WriteLine($"Erro ao minimizar janela: {ex.Message}");
         }
     }
 
-    private HashSet<IntPtr> GetAltTabWindows()
+    private void ActivateWindow(IntPtr hwnd)
     {
-        HashSet<IntPtr> windows = new HashSet<IntPtr>();
+        try
+        {
+            WINDOWPLACEMENT placement = new() { length = Marshal.SizeOf<WINDOWPLACEMENT>() };
+            if (!GetWindowPlacement(hwnd, ref placement))
+            {
+                Debug.WriteLine($"Falha ao obter posição da janela: {hwnd}");
+                return;
+            }
+
+            if (placement.showCmd == SW_SHOWMINIMIZED)
+            {
+                if (!ShowWindow(hwnd, SW_RESTORE))
+                {
+                    Debug.WriteLine($"Falha ao restaurar janela: {hwnd}");
+                    return;
+                }
+            }
+
+            if (!SetForegroundWindow(hwnd))
+            {
+                Debug.WriteLine($"Falha ao trazer janela para frente: {hwnd}");
+            }
+        }
+        catch (Exception ex)
+        {
+            Debug.WriteLine($"Erro ao ativar janela: {ex.Message}");
+        }
+    }
+
+    private static HashSet<IntPtr> GetAltTabWindows()
+    {
+        HashSet<IntPtr> windows = [];
 
         EnumDesktopWindows(IntPtr.Zero, (hwnd, lParam) =>
         {
-            if (IsAltTabWindow(hwnd))
+            if (IsAltTabWindow(hwnd) && !IsProtectedProcess(hwnd))
             {
                 windows.Add(hwnd);
             }
@@ -606,7 +587,7 @@ public class MainWindow : Form
         int length = GetWindowTextLength(hWnd);
         if (length == 0) return string.Empty;
 
-        StringBuilder sb = new StringBuilder(length + 1);
+        var sb = new StringBuilder(length + 1);
         GetWindowText(hWnd, sb, sb.Capacity);
         return sb.ToString();
     }
@@ -671,29 +652,148 @@ public class MainWindow : Form
     private const int SW_SHOWMINIMIZED = 2;
     private const int SW_RESTORE = 9;
     private const int SW_MINIMIZE = 6;
-    private const int SW_FORCEMINIMIZE = 11;
 
+    private bool IsAnyFullscreenWindowOnTaskbarMonitor()
+    {
+        var taskbarScreen = Screen.FromHandle(this.Handle);
+        var windows = GetAltTabWindows();
+
+        foreach (var hwnd in windows)
+        {
+            // Ignora a própria janela
+            if (hwnd == this.Handle) continue;
+
+            WINDOWPLACEMENT placement = new() { length = Marshal.SizeOf<WINDOWPLACEMENT>() };
+            GetWindowPlacement(hwnd, ref placement);
+
+            // Ignora janelas minimizadas
+            if (placement.showCmd == SW_SHOWMINIMIZED) continue;
+
+            // Verifica se a janela está no mesmo monitor da taskbar
+            var windowScreen = Screen.FromHandle(hwnd);
+            if (windowScreen.DeviceName != taskbarScreen.DeviceName) continue;
+
+            // Obtém o retângulo da janela
+            RECT rect;
+            if (GetWindowRect(hwnd, out rect))
+            {
+                var windowBounds = new Rectangle(rect.Left, rect.Top, 
+                    rect.Right - rect.Left, rect.Bottom - rect.Top);
+
+                // Verifica se a janela ocupa toda a área do monitor
+                if (windowBounds.Width >= windowScreen.Bounds.Width &&
+                    windowBounds.Height >= windowScreen.Bounds.Height)
+                {
+                    return true;
+                }
+            }
+        }
+
+        return false;
+    }
+
+    [DllImport("user32.dll")]
+    private static extern bool GetWindowRect(IntPtr hWnd, out RECT lpRect);
+
+    // Modifique o WinEventProc para verificar fullscreen
     private void WinEventProc(IntPtr hWinEventHook, uint eventType, IntPtr hwnd,
         int idObject, int idChild, uint dwEventThread, uint dwmsEventTime)
     {
-        if (eventType == EVENT_SYSTEM_FOREGROUND && hwnd != IntPtr.Zero)
-        {
-            string windowTitle = GetWindowText(hwnd);
-            // Ignora eventos com título vazio
-            if (string.IsNullOrEmpty(windowTitle)) return;
+        if (hwnd == IntPtr.Zero || idObject != 0) return;
 
-            LogDebug($"WinEventProc - Evento de mudança de foco para: {windowTitle}");
-            this.BeginInvoke(new Action(() => 
+        // Ignora eventos de processos protegidos
+        if (IsProtectedProcess(hwnd)) return;
+
+        // Para eventos de foco ou mudança de tamanho, verifica fullscreen
+        if (eventType == EVENT_SYSTEM_FOREGROUND || 
+            eventType == EVENT_OBJECT_STATECHANGE)
+        {
+            this.BeginInvoke(new Action(() =>
             {
-                try 
+                bool shouldHide = IsAnyFullscreenWindowOnTaskbarMonitor();
+                this.Visible = !shouldHide;
+            }));
+        }
+
+        // Para eventos de foco, processa imediatamente sem BeginInvoke
+        if (eventType == EVENT_SYSTEM_FOREGROUND)
+        {
+            string focusTitle = GetWindowText(hwnd);
+            if (!string.IsNullOrEmpty(focusTitle))
+            {
+                LogDebug($"WinEventProc - Mudança de foco para: {focusTitle}");
+                UpdateActiveWindow(hwnd);
+            }
+            return;
+        }
+
+        // Para outros eventos, usa BeginInvoke
+        this.BeginInvoke(new Action(() => 
+        {
+            try 
+            {
+                switch (eventType)
                 {
-                    UpdateActiveWindow(hwnd);
+                    case EVENT_OBJECT_CREATE:
+                    case EVENT_OBJECT_SHOW:
+                        string newTitle = GetWindowText(hwnd);
+                        if (!string.IsNullOrEmpty(newTitle) && IsAltTabWindow(hwnd))
+                        {
+                            LogDebug($"WinEventProc - Nova janela detectada: {newTitle}");
+                            UpdateWindowsList();
+                        }
+                        break;
+
+                    case EVENT_OBJECT_DESTROY:
+                    case EVENT_OBJECT_HIDE:
+                        ProcessWindowRemoval(hwnd);
+                        break;
+                }
+            }
+            catch (Exception ex)
+            {
+                LogDebug($"Erro ao processar evento de janela: {ex.Message}");
+            }
+        }));
+    }
+
+    // Método separado para remover janelas
+    private void ProcessWindowRemoval(IntPtr hwnd)
+    {
+        Monitor.Enter(stateLock);
+        try
+        {
+            if (windowStates.TryGetValue(hwnd, out var state))
+            {
+                LogDebug($"WinEventProc - Janela fechada/ocultada: {state.Title}");
+                
+                try
+                {
+                    layout.Controls.Remove(state.Button);
+                    state.Button.Dispose();
                 }
                 catch (Exception ex)
                 {
-                    LogDebug($"Erro ao atualizar janela ativa: {ex.Message}");
+                    Debug.WriteLine($"Erro ao remover botão: {ex.Message}");
                 }
-            }));
+                finally
+                {
+                    windowStates.Remove(hwnd);
+                }
+                
+                try
+                {
+                    layout.PerformLayout();
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine($"Erro ao atualizar layout: {ex.Message}");
+                }
+            }
+        }
+        finally
+        {
+            Monitor.Exit(stateLock);
         }
     }
 
@@ -704,39 +804,43 @@ public class MainWindow : Form
     {
         if (isInitializing) return;
 
+        if (!IsWindow(newActiveWindow) || !IsWindowVisible(newActiveWindow)) return;
+
         LogDebug($"UpdateActiveWindow - Nova janela ativa: {GetWindowText(newActiveWindow)}");
 
-        lock (stateLock)
+        Monitor.Enter(stateLock);
+        try
         {
-            bool stateChanged = false;
+            // Otimização: Verifica se já é a janela ativa
+            var currentActive = windowStates.Values.FirstOrDefault(w => w.IsActive);
+            if (currentActive?.Handle == newActiveWindow) return;
 
-            // Desativa a janela anterior
-            foreach (var state in windowStates.Values)
+            // Desativa apenas a janela atual (em vez de iterar por todas)
+            if (currentActive != null)
             {
-                if (state.IsActive)
-                {
-                    LogDebug($"Desativando janela: {state.Title}");
-                    state.IsActive = false;
-                    state.Button.IsActive = false;
-                    stateChanged = true;
-                }
+                currentActive.IsActive = false;
+                currentActive.Button.IsActive = false;
             }
 
-            // Ativa a nova janela se ela existir em nossa lista
+            // Ativa a nova janela
             if (windowStates.TryGetValue(newActiveWindow, out var activeState))
             {
-                LogDebug($"Ativando janela: {activeState.Title}");
                 activeState.IsActive = true;
                 activeState.Button.IsActive = true;
-                stateChanged = true;
-            }
-
-            if (!stateChanged)
-            {
-                LogDebug("Nenhuma mudança de estado detectada");
+                
+                // Força atualização visual imediata
+                activeState.Button.Invalidate();
             }
         }
+        finally
+        {
+            Monitor.Exit(stateLock);
+        }
     }
+
+    // Adicione estes P/Invokes
+    [DllImport("user32.dll")]
+    private static extern bool IsWindow(IntPtr hWnd);
 
     [STAThread]
     static void Main()
@@ -750,24 +854,113 @@ public class MainWindow : Form
     {
         if (disposing)
         {
-            if (hookHandle != IntPtr.Zero)
+            try
             {
-                UnhookWinEvent(hookHandle);
-                hookHandle = IntPtr.Zero;
-            }
-
-            lock (stateLock)
-            {
-                foreach (var state in windowStates.Values)
+                // Limpa todos os hooks
+                if (hookHandle != IntPtr.Zero)
                 {
-                    state.Button?.Image?.Dispose();
-                    state.Button?.Dispose();
+                    try
+                    {
+                        if (!UnhookWinEvent(hookHandle))
+                        {
+                            Debug.WriteLine("Falha ao remover hook de eventos");
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Debug.WriteLine($"Erro ao remover hook: {ex.Message}");
+                    }
+                    finally
+                    {
+                        hookHandle = IntPtr.Zero;
+                    }
                 }
-                windowStates.Clear();
-            }
 
-            layout?.Dispose();
+                Monitor.Enter(stateLock);
+                try
+                {
+                    foreach (var state in windowStates.Values)
+                    {
+                        try
+                        {
+                            state.Button?.Image?.Dispose();
+                            state.Button?.Dispose();
+                        }
+                        catch (Exception ex)
+                        {
+                            Debug.WriteLine($"Erro ao descartar botão: {ex.Message}");
+                        }
+                    }
+                    windowStates.Clear();
+                }
+                finally
+                {
+                    Monitor.Exit(stateLock);
+                }
+
+                try
+                {
+                    layout?.Dispose();
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine($"Erro ao descartar layout: {ex.Message}");
+                }
+
+                try
+                {
+                    updateTimer?.Dispose();
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine($"Erro ao descartar timer: {ex.Message}");
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Erro ao descartar recursos: {ex.Message}");
+            }
         }
         base.Dispose(disposing);
+    }
+
+    private void InitializeWindow()
+    {
+        LogMonitorInfo();
+        RestoreWindowPosition();
+    }
+
+    private void RegisterWindowsHooks()
+    {
+        // Registra múltiplos hooks de eventos do Windows
+        shellProcDelegate = new WinEventDelegate(WinEventProc);
+        
+        // Hook para mudança de foco
+        hookHandle = SetWinEventHook(EVENT_SYSTEM_FOREGROUND, EVENT_SYSTEM_FOREGROUND,
+            IntPtr.Zero, shellProcDelegate, 0, 0, WINEVENT_OUTOFCONTEXT);
+        
+        // Hook para criação de janelas
+        var createHook = SetWinEventHook(EVENT_OBJECT_CREATE, EVENT_OBJECT_CREATE,
+            IntPtr.Zero, shellProcDelegate, 0, 0, WINEVENT_OUTOFCONTEXT);
+        
+        // Hook para exibição de janelas
+        var showHook = SetWinEventHook(EVENT_OBJECT_SHOW, EVENT_OBJECT_SHOW,
+            IntPtr.Zero, shellProcDelegate, 0, 0, WINEVENT_OUTOFCONTEXT);
+
+        // Hook para destruição de janelas
+        var destroyHook = SetWinEventHook(EVENT_OBJECT_DESTROY, EVENT_OBJECT_DESTROY,
+            IntPtr.Zero, shellProcDelegate, 0, 0, WINEVENT_OUTOFCONTEXT);
+
+        // Hook para ocultação de janelas
+        var hideHook = SetWinEventHook(EVENT_OBJECT_HIDE, EVENT_OBJECT_HIDE,
+            IntPtr.Zero, shellProcDelegate, 0, 0, WINEVENT_OUTOFCONTEXT);
+
+        // Hook para mudanças de posição/tamanho
+        var locationHook = SetWinEventHook(EVENT_OBJECT_LOCATIONCHANGE, EVENT_OBJECT_LOCATIONCHANGE,
+            IntPtr.Zero, shellProcDelegate, 0, 0, WINEVENT_OUTOFCONTEXT);
+
+        // Hook para mudanças de estado
+        var stateHook = SetWinEventHook(EVENT_OBJECT_STATECHANGE, EVENT_OBJECT_STATECHANGE,
+            IntPtr.Zero, shellProcDelegate, 0, 0, WINEVENT_OUTOFCONTEXT);
     }
 }

@@ -1,6 +1,6 @@
+namespace MyTaskBar;
+
 using Newtonsoft.Json;
-using System;
-using System.Diagnostics;
 
 public class WindowPosition
 {
@@ -63,14 +63,15 @@ public class AppConfig
         MonitorDevice = Screen.PrimaryScreen?.DeviceName ?? ""
     };
 
+    private const string ConfigPath = "config.json";
+
     public static AppConfig Load()
     {
-        string configPath = "config.json";
         try
         {
-            if (File.Exists(configPath))
+            if (File.Exists(ConfigPath))
             {
-                string json = File.ReadAllText(configPath);
+                string json = File.ReadAllText(ConfigPath);
                 var config = JsonConvert.DeserializeObject<AppConfig>(json);
                 if (config == null)
                 {
@@ -112,7 +113,7 @@ public class AppConfig
         try
         {
             string json = JsonConvert.SerializeObject(this, Formatting.Indented);
-            File.WriteAllText("config.json", json);
+            File.WriteAllText(ConfigPath, json);
             Debug.WriteLine($"Configuração salva com monitor: {WindowPosition.MonitorDevice}");
         }
         catch (Exception ex)
