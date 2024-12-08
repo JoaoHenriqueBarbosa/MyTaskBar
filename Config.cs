@@ -60,6 +60,7 @@ public class AppConfig
     public HashSet<string> IgnoredApps { get; set; } = [];
     public bool ShowInTaskbar { get; set; } = true;
     public bool StartWithWindows { get; set; } = false;
+    public bool ForceHideTaskbar { get; set; } = false;
     public WindowPosition WindowPosition { get; set; } = new()
     {
         X = 100,
@@ -143,4 +144,4 @@ public class AppConfig
         }
         return new AppConfig();
     }
-} 
+}

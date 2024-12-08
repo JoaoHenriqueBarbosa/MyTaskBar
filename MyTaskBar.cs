@@ -309,8 +309,11 @@ public partial class MainWindow : Form
             taskbarHwnd = FindWindow("Shell_TrayWnd", string.Empty);
             if (taskbarHwnd != IntPtr.Zero)
             {
-                // Esconde completamente
-                SetWindowVisibility(taskbarHwnd, SW_HIDE);
+                // Esconde completamente apenas se ForceHideTaskbar estiver ativado
+                if (config.ForceHideTaskbar)
+                {
+                    SetWindowVisibility(taskbarHwnd, SW_HIDE);
+                }
             }
         }
         catch (Exception ex)

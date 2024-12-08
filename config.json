@@ -9,5 +9,6 @@
     "MonitorDevice": "\\\\.\\DISPLAY2",
     "X": 70,
     "Y": -5
-  }
+  },
+  "forceHideTaskbar": false
 }
